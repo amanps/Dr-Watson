@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dr Watson</string>
+    <string name="what_s_on_your_mind">Say something...</string>
+    <string name="tuberculosis">Tuberculosis</string>
+    <string name="iron_deficiency">Iron Deficiency</string>
+</resources>
