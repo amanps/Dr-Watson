@@ -4,7 +4,14 @@ import android.app.Application;
 
 public class DrWatsonApplication extends Application {
 
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+    }
+
     public static String WORKSPACE_ID = WorkspaceIds.IRON;
+    public static String currentDiseaseName = Diseases.IRON_DEFICIENCY;
 
     public static class WorkspaceIds {
 //        public static String IRON = "6e8cfded-d07d-4df9-8ebd-c193306c32c5";
@@ -13,7 +20,16 @@ public class DrWatsonApplication extends Application {
 //        public static String TB = "51a3b753-4a13-4e2a-a847-389eb89e5a94";
     }
 
+    public static class Diseases {
+        public static String IRON_DEFICIENCY = "iron_deficiency";
+        public static String TB = "tb";
+    }
+
     public static void setWorkspaceId(String workspaceId) {
         WORKSPACE_ID = workspaceId;
+    }
+
+    public static void setCurrentDiseaseName(String diseaseName) {
+        currentDiseaseName = diseaseName;
     }
 }

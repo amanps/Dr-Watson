@@ -1,0 +1,86 @@
+{
+  "name": {
+    "male": [
+      "James",
+      "John",
+      "Robert",
+      "Michael",
+      "William"
+    ],
+    "female": [
+      "Mary",
+      "Jenny",
+      "Elizabeth",
+      "Jennifer",
+      "Sarah"
+    ]
+  },
+  "age": [
+    "18",
+    "24",
+    "28",
+    "32",
+    "38",
+    "46",
+    "52"
+  ],
+  "symptoms": [
+    {
+      "type": "cough",
+      "positive": [
+        "I've had a slight cough for the last few weeks.",
+        "Yeah I have been coughing a lot lately.",
+        "Yes, I have been coughing. I was hoping it would fade, instead it has been getting worse."
+      ],
+      "negative": [
+        "No, I have not been coughing."
+      ]
+    },
+    {
+      "type": "fever",
+      "positive": [
+        "I have been feeling kind of hot.",
+        "My forehead does feel kind of hot.",
+        "I think I do have a slight fever"
+      ],
+      "negative": [
+        "No, I do not have a fever."
+      ]
+    },
+    {
+      "type": "night_sweats",
+      "positive": [
+        "Some nights I wake up with"
+      ],
+      "negative": [
+        "No, I have not experienced night sweats."
+      ]
+    },
+    {
+      "type": "heartbreak",
+      "positive": [
+        "Nothing is the same anymore. My heart is broken and you cannot mend it, doctor."
+      ],
+      "negative": [
+        "No, I've been great!"
+      ]
+    },
+    {
+      "type": "short_breath",
+      "positive": [
+        "Yes, I've been experiencing some shortness of breath."
+      ],
+      "negative": [
+        "No, I've been breathing just fine!"
+      ]
+    }
+  ],
+  "diseases": [
+    {
+      "type": "tuberculosis",
+      "open": [
+        "I think I might have the cold or flu. I've been taking over-the-counter medication, but it's not doing much. I've been drinking a lot of fluids, but it's difficult to have a full meal."
+      ]
+    }
+  ]
+}

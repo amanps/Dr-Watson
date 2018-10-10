@@ -23,6 +23,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
 import com.ibm.mobilefirstplatform.clientsdk.android.core.api.*;
 import com.ibm.mobilefirstplatform.clientsdk.android.analytics.api.*;
 import com.ibm.mobilefirstplatform.clientsdk.android.logger.api.*;
@@ -33,11 +35,9 @@ import com.ibm.watson.developer_cloud.android.library.audio.utils.ContentType;
 import com.ibm.watson.developer_cloud.conversation.v1.Conversation;
 import com.ibm.watson.developer_cloud.conversation.v1.model.InputData;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageOptions;
-import com.ibm.watson.developer_cloud.conversation.v1.model.MessageRequest;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.RecognizeOptions;
-import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeakerLabel;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.websocket.RecognizeCallback;
 import com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech;
@@ -46,11 +46,12 @@ import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
 
 import org.json.JSONObject;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
-import static com.ibm.watson.developer_cloud.android.library.audio.MicrophoneHelper.REQUEST_PERMISSION;
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -87,12 +88,17 @@ public class MainActivity extends AppCompatActivity {
     private MicrophoneHelper microphoneHelper;
     private Logger myLogger;
 
-
+    ConversationJson conversationJson;
+    DiseasesJson diseasesJson;
+    Disease currentDisease;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setupConversationJson();
+        setupDiseasesJson();
 
         mContext = getApplicationContext();
         conversation_username = mContext.getString(R.string.conversation_username);
@@ -259,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
                 MicrophoneHelper.REQUEST_PERMISSION);
     }
 
-    // Sending a message to Watson Conversation Service
+    // Sending a message to Watson ConversationJson Service
     private void sendMessage() {
 
         final String inputmessage = this.inputMessage.getText().toString().trim();
@@ -268,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
             inputMessage.setMessage(inputmessage);
             inputMessage.setId("1");
             messageArrayList.add(inputMessage);
-            myLogger.info("Sending a message to Watson Conversation Service");
+            myLogger.info("Sending a message to Watson ConversationJson Service");
 
         }
         else
@@ -317,8 +323,22 @@ public class MainActivity extends AppCompatActivity {
                                  *
                                  *  Build a cache mechanism for repeated questions.
                                  */
-                                outMessage.setMessage((String)responseList.get(0));
-                                outMessage.setId("2");
+
+                                if (response.getIntents() != null && response.getIntents().size() != 0 &&
+                                        isKnownSymptom(response.getIntents().get(0).getIntent())) {
+                                    String symptom = response.getIntents().get(0).getIntent();
+                                    Log.d("Aman", "Symptom: " + symptom);
+                                    if (diseaseHasSymptom(symptom)) {
+                                        outMessage.setMessage(getSymptomMessage(symptom, true));
+                                        outMessage.setId("2");
+                                    } else {
+                                        outMessage.setMessage(getSymptomMessage(symptom, false));
+                                        outMessage.setId("2");
+                                    }
+                                } else {
+                                    outMessage.setMessage((String)responseList.get(0));
+                                    outMessage.setId("2");
+                                }
                             }
                             messageArrayList.add(outMessage);
                             Thread thread = new Thread(new Runnable() {
@@ -519,13 +539,83 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.tuberculosis: {
                 DrWatsonApplication.setWorkspaceId(DrWatsonApplication.WorkspaceIds.TB);
+                DrWatsonApplication.setCurrentDiseaseName(DrWatsonApplication.Diseases.TB);
                 recreate();
                 break;
             }
             case R.id.iron_deficiency: {
                 DrWatsonApplication.setWorkspaceId(DrWatsonApplication.WorkspaceIds.IRON);
+                DrWatsonApplication.setCurrentDiseaseName(DrWatsonApplication.Diseases.IRON_DEFICIENCY);
                 recreate();
                 break;
+            }
+        }
+        return false;
+    }
+
+    private void setupConversationJson() {
+        Gson gson = new Gson();
+        String json = null;
+        try {
+            InputStream inputStream = getAssets().open("conversation.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            json = new String(buffer, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        conversationJson = gson.fromJson(json, ConversationJson.class);
+    }
+
+    private void setupDiseasesJson() {
+        Gson gson = new Gson();
+        String json = null;
+        try {
+            InputStream inputStream = getAssets().open("diseases.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            json = new String(buffer, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        diseasesJson = gson.fromJson(json, DiseasesJson.class);
+        for (Disease disease : diseasesJson.getDiseases()) {
+            if (disease.type.equals(DrWatsonApplication.currentDiseaseName)) {
+                currentDisease = disease;
+            }
+        }
+    }
+
+    private boolean diseaseHasSymptom(String symptom) {
+        return currentDisease.symptoms.contains(symptom);
+    }
+
+    private String getSymptomMessage(String symptom, boolean positive) {
+        for (Symptom s : conversationJson.symptoms) {
+            if (s.type.equals(symptom)) {
+                Random random = new Random();
+                if (positive) {
+                    return s.positive.get(random.nextInt(s.positive.size()));
+                } else {
+                    return s.negative.get(random.nextInt(s.negative.size()));
+                }
+            }
+        }
+        return "Unexpected symptom.";
+    }
+
+    private boolean isKnownSymptom(String symptom) {
+        for (Symptom s : conversationJson.symptoms) {
+            if (s.type.equals(symptom)) {
+                return true;
             }
         }
         return false;

@@ -1,0 +1,18 @@
+{
+  "diseases": [
+    {
+      "type": "tb",
+      "symptoms": [
+        "cough",
+        "fever"
+      ]
+    },
+    {
+      "type": "iron_deficiency",
+      "symptoms": [
+        "heartbreak",
+        "short_breath"
+      ]
+    }
+  ]
+}
