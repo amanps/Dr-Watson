@@ -6,7 +6,7 @@ public class ConversationJson {
 
     ArrayList<Symptom> symptoms;
     ArrayList<String> age;
-    ArrayList<ConversationDisease> conversationDiseases;
+    ArrayList<ConversationDisease> diseases;
     Name name;
 
     public ArrayList<Symptom> getSymptoms() {
@@ -25,12 +25,12 @@ public class ConversationJson {
         this.age = age;
     }
 
-    public ArrayList<ConversationDisease> getConversationDiseases() {
-        return conversationDiseases;
+    public ArrayList<ConversationDisease> getDiseases() {
+        return diseases;
     }
 
-    public void setConversationDiseases(ArrayList<ConversationDisease> conversationDiseases) {
-        this.conversationDiseases = conversationDiseases;
+    public void setDiseases(ArrayList<ConversationDisease> diseases) {
+        this.diseases = diseases;
     }
 
     public Name getName() {

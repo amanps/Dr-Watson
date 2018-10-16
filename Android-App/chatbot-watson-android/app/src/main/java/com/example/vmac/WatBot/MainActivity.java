@@ -24,7 +24,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
 import com.ibm.mobilefirstplatform.clientsdk.android.core.api.*;
 import com.ibm.mobilefirstplatform.clientsdk.android.analytics.api.*;
 import com.ibm.mobilefirstplatform.clientsdk.android.logger.api.*;
@@ -46,8 +45,6 @@ import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
 
 import org.json.JSONObject;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -626,7 +623,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getOpeningMessage(Disease currentDisease) {
-        for (ConversationDisease disease : conversationJson.conversationDiseases) {
+        for (ConversationDisease disease : conversationJson.diseases) {
             if (disease.type.equals(currentDisease.type)) {
                 return disease.open.get(0);
             }

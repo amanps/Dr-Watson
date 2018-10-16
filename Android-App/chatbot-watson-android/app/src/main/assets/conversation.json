@@ -101,6 +101,13 @@
       "negative": [
         "No, I have not been feeling fatigued lately."
       ]
+    },
+    {
+      "type": "open",
+      "positive": [
+      ],
+      "negative": [
+      ]
     }
   ],
   "diseases": [

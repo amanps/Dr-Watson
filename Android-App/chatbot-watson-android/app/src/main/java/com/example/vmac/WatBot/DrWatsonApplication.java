@@ -10,8 +10,8 @@ public class DrWatsonApplication extends Application {
 
     }
 
-    public static String WORKSPACE_ID = WorkspaceIds.IRON;
-    public static String currentDiseaseName = Diseases.IRON_DEFICIENCY;
+    public static String WORKSPACE_ID = WorkspaceIds.TB;
+    public static String currentDiseaseName = Diseases.TB;
 
     public static class WorkspaceIds {
 //        public static String IRON = "6e8cfded-d07d-4df9-8ebd-c193306c32c5";
@@ -23,7 +23,7 @@ public class DrWatsonApplication extends Application {
 
     public static class Diseases {
         public static String IRON_DEFICIENCY = "iron_deficiency";
-        public static String TB = "tb";
+        public static String TB = "tuberculosis";
     }
 
     public static void setWorkspaceId(String workspaceId) {

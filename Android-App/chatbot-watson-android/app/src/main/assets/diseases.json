@@ -1,7 +1,7 @@
 {
   "diseases": [
     {
-      "type": "tb",
+      "type": "tuberculosis",
       "symptoms": [
         "cough",
         "fever"
