@@ -328,8 +328,13 @@ public class MainActivity extends AppCompatActivity {
                                     if (symptom.equals("open")) {
                                         outMessage.setMessage(getOpeningMessage(currentDisease));
                                         outMessage.setId("2");
-                                    }
-                                    else if (diseaseHasSymptom(symptom)) {
+                                    } else if (symptom.equals("age")) {
+                                        outMessage.setMessage(getRandomAge());
+                                        outMessage.setId("2");
+                                    } else if (symptom.equals("name")) {
+                                        outMessage.setMessage(getRandomName());
+                                        outMessage.setId("2");
+                                    } else if (diseaseHasSymptom(symptom)) {
                                         outMessage.setMessage(getSymptomMessage(symptom, true));
                                         outMessage.setId("2");
                                     } else {
@@ -629,6 +634,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return "Unexpected symptom";
+    }
+
+    private String getRandomAge() {
+        Random random = new Random();
+        return conversationJson.age.get(random.nextInt(conversationJson.age.size()));
+    }
+
+    private String getRandomName() {
+        Random random = new Random();
+        return conversationJson.name.female.get(random.nextInt(conversationJson.name.female.size()));
     }
 
 }
