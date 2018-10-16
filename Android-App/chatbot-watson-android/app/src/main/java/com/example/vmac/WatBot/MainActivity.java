@@ -24,7 +24,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
 import com.ibm.mobilefirstplatform.clientsdk.android.core.api.*;
 import com.ibm.mobilefirstplatform.clientsdk.android.analytics.api.*;
 import com.ibm.mobilefirstplatform.clientsdk.android.logger.api.*;
@@ -46,8 +45,6 @@ import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
 
 import org.json.JSONObject;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -328,7 +325,16 @@ public class MainActivity extends AppCompatActivity {
                                         isKnownSymptom(response.getIntents().get(0).getIntent())) {
                                     String symptom = response.getIntents().get(0).getIntent();
                                     Log.d("Aman", "Symptom: " + symptom);
-                                    if (diseaseHasSymptom(symptom)) {
+                                    if (symptom.equals("open")) {
+                                        outMessage.setMessage(getOpeningMessage(currentDisease));
+                                        outMessage.setId("2");
+                                    } else if (symptom.equals("age")) {
+                                        outMessage.setMessage(getRandomAge());
+                                        outMessage.setId("2");
+                                    } else if (symptom.equals("name")) {
+                                        outMessage.setMessage(getRandomName());
+                                        outMessage.setId("2");
+                                    } else if (diseaseHasSymptom(symptom)) {
                                         outMessage.setMessage(getSymptomMessage(symptom, true));
                                         outMessage.setId("2");
                                     } else {
@@ -619,6 +625,25 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return false;
+    }
+
+    private String getOpeningMessage(Disease currentDisease) {
+        for (ConversationDisease disease : conversationJson.diseases) {
+            if (disease.type.equals(currentDisease.type)) {
+                return disease.open.get(0);
+            }
+        }
+        return "Unexpected symptom";
+    }
+
+    private String getRandomAge() {
+        Random random = new Random();
+        return conversationJson.age.get(random.nextInt(conversationJson.age.size()));
+    }
+
+    private String getRandomName() {
+        Random random = new Random();
+        return conversationJson.name.female.get(random.nextInt(conversationJson.name.female.size()));
     }
 
 }
