@@ -328,7 +328,11 @@ public class MainActivity extends AppCompatActivity {
                                         isKnownSymptom(response.getIntents().get(0).getIntent())) {
                                     String symptom = response.getIntents().get(0).getIntent();
                                     Log.d("Aman", "Symptom: " + symptom);
-                                    if (diseaseHasSymptom(symptom)) {
+                                    if (symptom.equals("open")) {
+                                        outMessage.setMessage(getOpeningMessage(currentDisease));
+                                        outMessage.setId("2");
+                                    }
+                                    else if (diseaseHasSymptom(symptom)) {
                                         outMessage.setMessage(getSymptomMessage(symptom, true));
                                         outMessage.setId("2");
                                     } else {
@@ -619,6 +623,15 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return false;
+    }
+
+    private String getOpeningMessage(Disease currentDisease) {
+        for (ConversationDisease disease : conversationJson.conversationDiseases) {
+            if (disease.type.equals(currentDisease.type)) {
+                return disease.open.get(0);
+            }
+        }
+        return "Unexpected symptom";
     }
 
 }
