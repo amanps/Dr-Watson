@@ -41,7 +41,7 @@
       "positive": [
         "I have been feeling kind of hot.",
         "My forehead does feel kind of hot.",
-        "I think I do have a slight fever"
+        "I think I do have a slight fever."
       ],
       "negative": [
         "No, I do not have a fever."
@@ -50,28 +50,56 @@
     {
       "type": "night_sweats",
       "positive": [
-        "Some nights I wake up with"
+        "Some nights I wake up with soaked in my nightclothes.",
+        "Yes, though my bedroom is always kept at a 70 degrees.",
+        "I have noticed that I've been sweating a lot and I don't think it's because I'm sleeping under too many blankets."
       ],
       "negative": [
         "No, I have not experienced night sweats."
       ]
     },
     {
-      "type": "heartbreak",
+      "type": "weight_loss",
       "positive": [
-        "Nothing is the same anymore. My heart is broken and you cannot mend it, doctor."
+        "Yeah, at least I'm not gaining weight :).",
+        "I'm glad you noticed :).",
+        "Thank you for the complement."
       ],
       "negative": [
-        "No, I've been great!"
+        "No, I've maintained the same weight."
       ]
     },
     {
-      "type": "short_breath",
+      "type": "loss_of_appetite",
       "positive": [
-        "Yes, I've been experiencing some shortness of breath."
+        "I have skipped a few meals, sometimes I just don't feel hungry",
+        "I've had some difficulty finishing my meals. I just don't feel hungry.",
+        "Yeah, I'm not eating as much now."
       ],
       "negative": [
-        "No, I've been breathing just fine!"
+        "No, I've my eating habits have not changed."
+      ]
+    },
+    {
+      "type": "headache",
+      "positive": [
+        "Yeah, I've been having random headache.",
+        "Now that you mention it, I have been experiencing headaches throughout the day.",
+        "Yes, a few headaches here and there."
+      ],
+      "negative": [
+        "No, I have not had a headache recently."
+      ]
+    },
+    {
+      "type": "tiredness",
+      "positive": [
+        "Yeah, I have been feeling kind of tired. Maybe I'm getting old.",
+        "Yes, some days I come home from work and immediately go to bed.",
+        "I do feel like I don't have as much energy as I use to."
+      ],
+      "negative": [
+        "No, I have not been feeling fatigued lately."
       ]
     }
   ],
