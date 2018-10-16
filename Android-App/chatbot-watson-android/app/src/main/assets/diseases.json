@@ -1,18 +1,144 @@
 {
-  "diseases": [
-    {
-      "type": "tb",
-      "symptoms": [
-        "cough",
-        "fever"
-      ]
-    },
-    {
-      "type": "iron_deficiency",
-      "symptoms": [
-        "heartbreak",
-        "short_breath"
-      ]
-    }
-  ]
+ "diseases": [
+  {
+   "type": "arthritis",
+   "symptoms": [
+    "joint_pain",
+    "inflammation_in_and_around_the_joints",
+    "weakness_and_muscle_wasting",
+    "red_skin_over_the_affected_joint"
+   ]
+  },
+  {
+   "type": "appendicitis",
+   "symptoms": [
+    "nausea",
+    "loss_of_appetite",
+    "diarrhoea",
+    "fever"
+   ]
+  },
+  {
+   "type": "alzhemier's",
+   "symptoms": [
+    "confusion",
+    "hallucinations",
+    "pesonality_changes",
+    "low_mood"
+   ]
+  },
+  {
+   "type": "bulimia",
+   "symptoms": [
+    "depression_",
+    "anxiety",
+    "isolation",
+    "obsessive_attitude_towards_food_and_eating"
+   ]
+  },
+  {
+   "type": "bronchitis",
+   "symptoms": [
+    "sore_throat",
+    "headache",
+    "runny_nose",
+    "tiredness"
+   ]
+  },
+  {
+   "type": "chronic_fatigue_syndrome",
+   "symptoms": [
+    "pain",
+    "sleep_disturbance",
+    "dizziness",
+    "nausea",
+    "loss_of_appetitie"
+   ]
+  },
+  {
+   "type": "conjunctivitis",
+   "symptoms": [
+    "pain_in_eyes",
+    "sensitivity_to_light",
+    "disturbed_vision",
+    "intense_redness_in_eyes"
+   ]
+  },
+  {
+   "type": "crohn's_disease",
+   "symptoms": [
+    "diarrhoea",
+    "abdominal_pain",
+    "fatigue",
+    "weight_loss",
+    "blood_in_stool"
+   ]
+  },
+  {
+   "type": "cystic_fibrosis",
+   "symptoms": [
+    "wheezing",
+    "coughing",
+    "recurring_chest_infection"
+   ]
+  },
+  {
+   "type": "chickenpox",
+   "symptoms": [
+    "rash",
+    "fever",
+    "painful_muscles",
+    "headache",
+    "loss_of_appetitie"
+   ]
+  },
+  {
+   "type": "gallbladder_cancer",
+   "symptoms": [
+    "abdominal_pain",
+    "sick",
+    "jaundice"
+   ]
+  },
+  {
+   "type": "hay_fever",
+   "symptoms": [
+    "sneezing",
+    "runny_nose"
+   ]
+  },
+  {
+   "type": "haemorrhoids",
+   "symptoms": [
+    "bleeeding_",
+    "itchy_bottom",
+    "mucus_discharge"
+   ]
+  },
+  {
+   "type": "flu",
+   "symptoms": [
+    "chesty_cough",
+    "fever",
+    "chills",
+    "weakness"
+   ]
+  },
+  {
+   "type": "gout",
+   "symptoms": [
+    "joint_pain",
+    "red,_shiny_skin_over_the_affected_joint"
+   ]
+  },
+  {
+   "type": "tuberculosis",
+   "symptoms": [
+    "fever",
+    "cough",
+    "weight_loss",
+    "night_sweats"
+   ]
+  }
+ ]
 }
