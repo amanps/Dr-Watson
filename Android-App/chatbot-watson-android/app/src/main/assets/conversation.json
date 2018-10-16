@@ -26,6 +26,27 @@
   ],
   "symptoms": [
     {
+      "type": "open",
+      "positive": [
+      ],
+      "negative": [
+      ]
+    },
+    {
+      "type": "age",
+      "positive": [
+      ],
+      "negative": [
+      ]
+    },
+	{
+      "type": "name",
+      "positive": [
+      ],
+      "negative": [
+      ]
+    },
+    {
       "type": "cough",
       "positive": [
         "I've had a slight cough for the last few weeks.",
@@ -101,13 +122,6 @@
       "negative": [
         "No, I have not been feeling fatigued lately."
       ]
-    },
-    {
-      "type": "open",
-      "positive": [
-      ],
-      "negative": [
-      ]
     }
   ],
   "diseases": [
@@ -119,3 +133,4 @@
     }
   ]
 }
+
