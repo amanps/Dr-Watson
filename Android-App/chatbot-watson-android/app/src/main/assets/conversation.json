@@ -69,6 +69,79 @@
       ]
     },
     {
+      "type": "nausea",
+      "positive": [
+        "Yes, I feel like I am going to throw up."
+        "Yeah I feel nauseous alot."
+      ],
+      "negative": [
+        "Not really."
+        "No I haven't been feeling nauseous lately."
+      ]
+    },
+    {
+      "type": "diarrhea",
+      "positive": [
+        "Yes I do have diarrhea."
+        "Yeah I have the Hershey squirts."
+        "My bowel movements haven't been solid lately."
+      ],
+      "negative": [
+        "No I don't have diarrhea."
+        "Not really my number 2s have been pretty normal."
+      ]
+    },
+    {
+      "type": "sore_throat",
+      "positive": [
+        "Yeah my throat hurts pretty bad."
+        "Yes, it has been hard to eat because of it."
+        "Yeah it is pretty painful."
+      ],
+      "negative": [
+        "No my throat feels fine."
+        "Not really, it feels pretty normal."
+        "No I don't have a sore throat."
+      ]
+    },
+    {
+      "type": "runny_nose",
+      "positive": [
+        "Yes I do have a runny nose."
+        "Yeah I have been using tissues nonstop."
+      ],
+      "negative": [
+        "Not really."
+        "No I don't have a runny nose."
+        "No my nose has been clear."
+      ]
+    },
+    {
+      "type": "fatigue",
+      "positive": [
+        "Yes I have been super tired lately."
+        "Yeah I am very fatigued."
+        "Yes I feel exhausted all the time."
+      ],
+      "negative": [
+        "No I haven't been fatigued."
+        "Not really."
+      ]
+    },
+    {
+      "type": "chills",
+      "positive": [
+        "Yes I feel cold all the time."
+        "Yeah I do have the chills."
+        "I have been feeling chilly lately."
+      ],
+      "negative": [
+        "No I don't have the chills."
+        "No I haven't experienced that."
+        "Not really"
+      ]
+    },
+    {
       "type": "night_sweats",
       "positive": [
         "Some nights I wake up with soaked in my nightclothes.",
@@ -133,4 +206,3 @@
     }
   ]
 }
-
