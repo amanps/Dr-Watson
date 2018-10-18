@@ -324,7 +324,6 @@ public class MainActivity extends AppCompatActivity {
                                 if (response.getIntents() != null && response.getIntents().size() != 0 &&
                                         isKnownSymptom(response.getIntents().get(0).getIntent())) {
                                     String symptom = response.getIntents().get(0).getIntent();
-                                    Log.d("Aman", "Symptom: " + symptom);
                                     if (symptom.equals("open")) {
                                         outMessage.setMessage(getOpeningMessage(currentDisease));
                                         outMessage.setId("2");

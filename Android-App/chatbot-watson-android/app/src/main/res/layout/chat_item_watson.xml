@@ -2,29 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:background="@null">
 
-    <android.support.v7.widget.AppCompatImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:src="@mipmap/ic_face" />
+        android:textColor="#ffffff"
+        android:text="P"
+        android:background="@drawable/circle"
+        android:textSize="22sp"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/message"
         android:autoLink="web"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="24dp"
         android:background="@drawable/bg_bubble_watbot"
         android:fontFamily="sans-serif"
-        android:textColor="@android:color/black"
+        android:textColor="#fafafa"
         android:textIsSelectable="true"
-        android:textSize="14sp" />
-
+        tools:text="asdflkjhasdkf ahlksjdfhaksljdfh askljdfaskljdfha skjdfhas kjdfha ksjdfha skdjfhas dkjfhas lkdfhas kljdfha skljdfha lsdf"
+        android:textSize="16sp"/>
 
 </LinearLayout>

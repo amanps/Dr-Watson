@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
-    tools:context="com.example.vmac.WatBot.MainActivity">
+    tools:context="com.example.vmac.WatBot.MainActivity"
+    android:background="@color/colorPrimary">
 
     <android.support.design.widget.AppBarLayout
          android:layout_width="match_parent"
@@ -17,7 +18,7 @@
              app:title="@string/app_name"
              app:titleTextColor="#ffffff"
              android:layout_height="?attr/actionBarSize"
-             android:background="?attr/colorPrimary"/>
+             android:background="?attr/colorPrimaryDark"/>
 
      </android.support.design.widget.AppBarLayout>
 
