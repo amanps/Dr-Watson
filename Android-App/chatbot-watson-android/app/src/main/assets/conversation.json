@@ -122,6 +122,39 @@
       "negative": [
         "No, I have not been feeling fatigued lately."
       ]
+    },
+    {
+      "type": "joint_pain",
+      "positive": [
+        "Yeah, I've been having pain in my joints. I didn't read into it too much. I just assumed it would go away.",
+        "Now that you mention it, I have been experiencing some pain in my joints in the last few days.",
+        "Yes, I've been have some joint pain."
+      ],
+      "negative": [
+        "No, I have not had any pain in my joints recently."
+      ]
+    },
+    {
+      "type": "muscle_weakness",
+      "positive": [
+        "Yeah, my muscles have been feeling sore.",
+        "Now that you mention it, I have been experiencing weakness in my muscles throughout the day.",
+        "Yes, a few aches here and there."
+      ],
+      "negative": [
+        "No, I have not had any weakness in my muscles recently."
+      ]
+    },
+    {
+      "type": "red_skin",
+      "positive": [
+        "Yeah, I have some patches on my arms.",
+        "Yes, I've recently noticed some red patches on my body.",
+        "Yes, a few red patches here and there."
+      ],
+      "negative": [
+        "No, I do have any red patches on my body."
+      ]
     }
   ],
   "diseases": [
@@ -133,4 +166,3 @@
     }
   ]
 }
-

@@ -4,9 +4,8 @@
    "type": "arthritis",
    "symptoms": [
     "joint_pain",
-    "inflammation_in_and_around_the_joints",
-    "weakness_and_muscle_wasting",
-    "red_skin_over_the_affected_joint"
+    "muscle_weakness",
+    "red_skin"
    ]
   },
   {
@@ -132,12 +131,202 @@
    ]
   },
   {
-   "type": "tuberculosis",
+   "type": "malaria",
    "symptoms": [
     "fever",
+    "headache",
+    "vomiting",
+    "muscle_pain",
+    "diarrhea",
+    "feeling_hot_and_shivery"
+   ]
+  },
+  {
+   "type": "measles",
+   "symptoms": [
+    "runny_nose",
+    "sneezing",
     "cough",
+    "sore,_red_eyes",
+    "fever",
+    "small_gray-ish_white_spots_on_the_inside_of_the_cheeks"
+   ]
+  },
+  {
+   "type": "meningitis",
+   "symptoms": [
+    "fever",
+    "headache",
+    "blotchy_rash",
+    "stiff_neck",
+    "drowsiness",
+    "seizures",
+    "dislike_of_bright_lights"
+   ]
+  },
+  {
+   "type": "mesothelioma",
+   "symptoms": [
+    "chest_pain",
+    "shortness_of_breath",
+    "fatigue",
+    "fever",
+    "sweating",
+    "cough",
+    "loss_of_appetite"
+   ]
+  },
+  {
+   "type": "migraine",
+   "symptoms": [
+    "headache",
+    "nausea",
+    "vomiting"
+   ]
+  },
+  {
+   "type": "narcolepsy",
+   "symptoms": [
+    "excessive_daytime_sleepiness",
+    "sleep_attacks",
+    "cataplexy",
+    "sleep_paralysis"
+   ]
+  },
+  {
+   "type": "neuroblastoma",
+   "symptoms": [
+    "stomachache",
+    "breathlessness",
+    "difficulty_swallowing",
+    "a_lump_in_the_neck",
+    "fatigue",
+    "pale_skin",
+    "loss_of_appetite"
+   ]
+  },
+  {
+   "type": "oedema",
+   "symptoms": [
+    "puffiness_of_the_skin",
+    "skin_discoloration",
+    "aching_limbs",
+    "stiff_joints",
+    "weight_gain"
+   ]
+  },
+  {
+   "type": "oesophageal_cancer",
+   "symptoms": [
+    "difficulty_swallowing",
     "weight_loss",
-    "night_sweats"
+    "indigestion",
+    "heartburn",
+    "loss_of_appetite"
+   ]
+  },
+  {
+   "type": "pancreatic_cancer",
+   "symptoms": [
+    "back_pain",
+    "stomachache",
+    "weight_loss",
+    "jaundice",
+    "nausea",
+    "fever",
+    "shivering"
+   ]
+  },
+  {
+   "type": "pelvic_inflammatory_disease",
+   "symptoms": [
+    "pain_around_the_pelvis",
+    "pain_during_sex",
+    "pain_during_urination",
+    "bleeding_between_periods"
+   ]
+  },
+  {
+   "type": "pneumonia",
+   "symptoms": [
+    "cough",
+    "difficulty_swallowing",
+    "rapid_heartbeat",
+    "fever",
+    "sweating",
+    "shivering",
+    "loss_of_appetite"
+   ]
+  },
+  {
+   "type": "polio",
+   "symptoms": [
+    "fever",
+    "sore_throat",
+    "headache",
+    "stomachache",
+    "muscle_aches"
+   ]
+  },
+  {
+   "type": "polycystic_ovary_syndrome",
+   "symptoms": [
+    "irregular_periods",
+    "excessive_hair_growth",
+    "weight_gain",
+    "hair_loss",
+    "oily_skin"
+   ]
+  },
+  {
+   "type": "prostate_cancer",
+   "symptoms": [
+    "increased_need_to_pee",
+    "straining_while_you_pee",
+    "feeling_like_your_bladder_isnt_fully_emptied"
+   ]
+  },
+  {
+   "type": "sinusitis",
+   "symptoms": [
+    "blocked_nose",
+    "reduced_sense_of_smell",
+    "green_or_yellow_mucus_from_your_nose",
+    "headache",
+    "fever"
+   ]
+  },
+  {
+   "type": "tonsillitis",
+   "symptoms": [
+    "sore_throat",
+    "difficulty_swallowing",
+    "fever",
+    "coughing",
+    "headache",
+    "fatigue"
+   ]
+  },
+  {
+   "type": "tuberculosis",
+   "symptoms": [
+    "weight_loss",
+    "night_sweats",
+    "fever",
+    "fatigue",
+    "loss_of_appetite",
+    "cough"
+   ]
+  },
+  {
+   "type": "yellow_fever",
+   "symptoms": [
+    "fever",
+    "headache",
+    "vomiting",
+    "muscle_pain",
+    "backache",
+    "loss_of_appetite"
    ]
   }
  ]
