@@ -1,3 +1,5 @@
+package com.example.vmac.WatBot.score;
+
 import java.util.ArrayList;
 
 public class ScoreCalculate implements ScoreCalculator {
