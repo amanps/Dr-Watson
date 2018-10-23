@@ -47,6 +47,13 @@
       ]
     },
     {
+      "type": "score",
+      "positive": [
+      ],
+      "negative": [
+      ]
+    },
+    {
       "type": "cough",
       "positive": [
         "I've had a slight cough for the last few weeks.",
@@ -71,72 +78,140 @@
     {
       "type": "nausea",
       "positive": [
-        "Yes, I feel like I am going to throw up."
+        "Yes, I feel like I am going to throw up.",
         "Yeah I feel nauseous alot."
       ],
       "negative": [
-        "Not really."
+        "Not really.",
         "No I haven't been feeling nauseous lately."
       ]
     },
     {
       "type": "diarrhea",
       "positive": [
-        "Yes I do have diarrhea."
+        "Yes I do have diarrhea.",
         "My bowel movements haven't been solid lately."
       ],
       "negative": [
-        "No I don't have diarrhea."
+        "No I don't have diarrhea.",
         "Not really my number 2s have been pretty normal."
       ]
     },
     {
       "type": "sore_throat",
       "positive": [
-        "Yeah my throat hurts pretty bad."
-        "Yes, it has been hard to eat because of it."
+        "Yeah my throat hurts pretty bad.",
+        "Yes, it has been hard to eat because of it.",
         "Yeah it is pretty painful."
       ],
       "negative": [
-        "No my throat feels fine."
-        "Not really, it feels pretty normal."
+        "No my throat feels fine.",
+        "Not really, it feels pretty normal.",
         "No I don't have a sore throat."
+      ]
+    },
+    {
+      "type": "confusion",
+      "positive":[
+        "I have been getting confused recently.",
+        "Yes I would say I have been getting confused."
+      ],
+      "negative":[
+        "No I don't think so.",
+        "Not at all."
+      ]
+    },
+    {
+      "type": "hallucinations",
+      "positive": [
+        "I have been having hallucinations yes.",
+        "Yes I have been having hallucinations."
+      ],
+      "negative": [
+        "No I have not had any hallucinations.",
+        "Nope I haven't hallucinated at all."
+      ]
+    },
+    {
+      "type": "personality_changes",
+      "positive": [
+        "Yes I think I have experienced that recently.",
+        "I would say I have had that."
+      ],
+      "negative": [
+        "No I don't think so.",
+        "No I haven't had any personality changes."
+      ]
+    },
+    {
+      "type": "depression",
+      "positive": [
+        "I believe so.",
+        "I think I am depressed."
+      ],
+      "negative": [
+        "No I am not depressed.",
+        "No I don't have depression."
+      ]
+    },
+    {
+      "type": "stomachache",
+      "positive": [
+        "Yeah my stomach has been in knots recently.",
+        "I have been getting stomachaches often."
+      ],
+      "negative": [
+        "No my stomach has been fine lately.",
+        "Not at all.",
+        "No everything has been normal in that area."
+      ]
+    },
+    {
+      "type": "abdominal_pain",
+      "positive": [
+        "Yes I have.",
+        "Yeah it hurts pretty often."
+      ],
+      "negative": [
+        "No everything has been fine there.",
+        "I don't think so.",
+        "Not really."
       ]
     },
     {
       "type": "runny_nose",
       "positive": [
-        "Yes I do have a runny nose."
+        "Yes I do have a runny nose.",
         "Yeah I have been using tissues nonstop."
       ],
       "negative": [
-        "Not really."
-        "No I don't have a runny nose."
+        "Not really.",
+        "No I don't have a runny nose.",
         "No my nose has been clear."
       ]
     },
     {
       "type": "fatigue",
       "positive": [
-        "Yes I have been super tired lately."
-        "Yeah I am very fatigued."
+        "Yes I have been super tired lately.",
+        "Yeah I am very fatigued.",
         "Yes I feel exhausted all the time."
       ],
       "negative": [
-        "No I haven't been fatigued."
+        "No I haven't been fatigued.",
         "Not really."
       ]
     },
     {
       "type": "chills",
       "positive": [
-        "Yes I feel cold all the time."
-        "Yeah I do have the chills."
+        "Yes I feel cold all the time.",
+        "Yeah I do have the chills.",
         "I have been feeling chilly lately."
       ],
       "negative": [
-        "No I don't have the chills."
-        "No I haven't experienced that."
+        "No I don't have the chills.",
+        "No I haven't experienced that.",
         "Not really"
       ]
     },
@@ -149,6 +224,18 @@
       ],
       "negative": [
         "No, I have not experienced night sweats."
+      ]
+    },
+    {
+      "type": "back_pain",
+      "positive": [
+        "Yeah my back has been hurting.",
+        "Yes it's pretty bad too."
+      ],
+      "negative": [
+        "No my back has been fine.",
+        "Not really.",
+        "No I don't think so."
       ]
     },
     {
@@ -182,17 +269,6 @@
       ],
       "negative": [
         "No, I have not had a headache recently."
-      ]
-    },
-    {
-      "type": "tiredness",
-      "positive": [
-        "Yeah, I have been feeling kind of tired. Maybe I'm getting old.",
-        "Yes, some days I come home from work and immediately go to bed.",
-        "I do feel like I don't have as much energy as I use to."
-      ],
-      "negative": [
-        "No, I have not been feeling fatigued lately."
       ]
     },
     {
