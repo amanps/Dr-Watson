@@ -220,6 +220,18 @@
       ]
     },
     {
+      "type": "back_pain",
+      "positive": [
+        "Yeah my back has been hurting.",
+        "Yes it's pretty bad too."
+      ],
+      "negative": [
+        "No my back has been fine.",
+        "Not really.",
+        "No I don't think so."
+      ]
+    },
+    {
       "type": "weight_loss",
       "positive": [
         "Yeah, at least I'm not gaining weight :).",
