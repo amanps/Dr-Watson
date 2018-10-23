@@ -23,6 +23,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.vmac.WatBot.score.ScoreCalculate;
+import com.example.vmac.WatBot.score.ScoreCalculator;
 import com.google.gson.Gson;
 import com.ibm.mobilefirstplatform.clientsdk.android.core.api.*;
 import com.ibm.mobilefirstplatform.clientsdk.android.analytics.api.*;
@@ -88,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
     ConversationJson conversationJson;
     DiseasesJson diseasesJson;
     Disease currentDisease;
+
+    ArrayList<String> symptomsAsked = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -333,7 +337,11 @@ public class MainActivity extends AppCompatActivity {
                                     } else if (symptom.equals("name")) {
                                         outMessage.setMessage(getRandomName());
                                         outMessage.setId("2");
+                                    } else if (symptom.equals("score")) {
+                                        outMessage.setMessage(getScoreMessage((String)responseList.get(0)));
+                                        outMessage.setId("2");
                                     } else if (diseaseHasSymptom(symptom)) {
+                                        symptomsAsked.add(symptom);
                                         outMessage.setMessage(getSymptomMessage(symptom, true));
                                         outMessage.setId("2");
                                     } else {
@@ -643,6 +651,21 @@ public class MainActivity extends AppCompatActivity {
     private String getRandomName() {
         Random random = new Random();
         return conversationJson.name.female.get(random.nextInt(conversationJson.name.female.size()));
+    }
+
+    private String getScoreMessage(String answer) {
+        ArrayList<String> allSymptoms = new ArrayList<>();
+        for (Disease disease : diseasesJson.getDiseases()) {
+            if (disease.type.equals(DrWatsonApplication.currentDiseaseName)) {
+                allSymptoms = disease.symptoms;
+            }
+        }
+
+        ArrayList<String> answers = new ArrayList<>();
+        answers.add(answer);
+        ScoreCalculator scoreCalculator = new ScoreCalculate();
+
+        return "Your score is " + scoreCalculator.getScore(allSymptoms, symptomsAsked, answers, currentDisease.type);
     }
 
 }
