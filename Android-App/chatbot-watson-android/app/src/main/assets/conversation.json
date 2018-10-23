@@ -272,17 +272,6 @@
       ]
     },
     {
-      "type": "tiredness",
-      "positive": [
-        "Yeah, I have been feeling kind of tired. Maybe I'm getting old.",
-        "Yes, some days I come home from work and immediately go to bed.",
-        "I do feel like I don't have as much energy as I use to."
-      ],
-      "negative": [
-        "No, I have not been feeling fatigued lately."
-      ]
-    },
-    {
       "type": "joint_pain",
       "positive": [
         "Yeah, I've been having pain in my joints. I didn't read into it too much. I just assumed it would go away.",
