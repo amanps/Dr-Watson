@@ -47,6 +47,13 @@
       ]
     },
     {
+      "type": "score",
+      "positive": [
+      ],
+      "negative": [
+      ]
+    },
+    {
       "type": "cough",
       "positive": [
         "I've had a slight cough for the last few weeks.",
