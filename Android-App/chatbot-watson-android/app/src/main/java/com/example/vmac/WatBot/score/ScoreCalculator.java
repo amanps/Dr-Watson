@@ -8,5 +8,6 @@ public interface ScoreCalculator {
             ArrayList<String> askedSymptoms, ArrayList<String> ResponsedAnswer,
             String CorrectAnswer);
 
-
+    public String MissSymptoms(ArrayList<String> AllSymptoms,
+            ArrayList<String> AskedSymptoms);
 }

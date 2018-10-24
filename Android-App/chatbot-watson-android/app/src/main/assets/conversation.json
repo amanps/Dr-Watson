@@ -111,6 +111,74 @@
       ]
     },
     {
+      "type": "confusion",
+      "positive":[
+        "I have been getting confused recently.",
+        "Yes I would say I have been getting confused."
+      ],
+      "negative":[
+        "No I don't think so.",
+        "Not at all."
+      ]
+    },
+    {
+      "type": "hallucinations",
+      "positive": [
+        "I have been having hallucinations yes.",
+        "Yes I have been having hallucinations."
+      ],
+      "negative": [
+        "No I have not had any hallucinations.",
+        "Nope I haven't hallucinated at all."
+      ]
+    },
+    {
+      "type": "personality_changes",
+      "positive": [
+        "Yes I think I have experienced that recently.",
+        "I would say I have had that."
+      ],
+      "negative": [
+        "No I don't think so.",
+        "No I haven't had any personality changes."
+      ]
+    },
+    {
+      "type": "depression",
+      "positive": [
+        "I believe so.",
+        "I think I am depressed."
+      ],
+      "negative": [
+        "No I am not depressed.",
+        "No I don't have depression."
+      ]
+    },
+    {
+      "type": "stomachache",
+      "positive": [
+        "Yeah my stomach has been in knots recently.",
+        "I have been getting stomachaches often."
+      ],
+      "negative": [
+        "No my stomach has been fine lately.",
+        "Not at all.",
+        "No everything has been normal in that area."
+      ]
+    },
+    {
+      "type": "abdominal_pain",
+      "positive": [
+        "Yes I have.",
+        "Yeah it hurts pretty often."
+      ],
+      "negative": [
+        "No everything has been fine there.",
+        "I don't think so.",
+        "Not really."
+      ]
+    },
+    {
       "type": "runny_nose",
       "positive": [
         "Yes I do have a runny nose.",
@@ -159,6 +227,18 @@
       ]
     },
     {
+      "type": "back_pain",
+      "positive": [
+        "Yeah my back has been hurting.",
+        "Yes it's pretty bad too."
+      ],
+      "negative": [
+        "No my back has been fine.",
+        "Not really.",
+        "No I don't think so."
+      ]
+    },
+    {
       "type": "weight_loss",
       "positive": [
         "Yeah, at least I'm not gaining weight :).",
@@ -189,17 +269,6 @@
       ],
       "negative": [
         "No, I have not had a headache recently."
-      ]
-    },
-    {
-      "type": "tiredness",
-      "positive": [
-        "Yeah, I have been feeling kind of tired. Maybe I'm getting old.",
-        "Yes, some days I come home from work and immediately go to bed.",
-        "I do feel like I don't have as much energy as I use to."
-      ],
-      "negative": [
-        "No, I have not been feeling fatigued lately."
       ]
     },
     {
