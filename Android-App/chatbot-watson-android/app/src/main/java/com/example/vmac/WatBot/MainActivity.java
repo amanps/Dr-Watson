@@ -52,6 +52,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Random;
 
+import static com.example.vmac.WatBot.DrWatsonApplication.diseasesJson;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -88,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
     private Logger myLogger;
 
     ConversationJson conversationJson;
-    DiseasesJson diseasesJson;
     Disease currentDisease;
 
     ArrayList<String> symptomsAsked = new ArrayList<>();
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setupConversationJson();
-        setupDiseasesJson();
+        setupCurrentDisease();
 
         mContext = getApplicationContext();
         conversation_username = mContext.getString(R.string.conversation_username);
@@ -584,22 +585,7 @@ public class MainActivity extends AppCompatActivity {
         conversationJson = gson.fromJson(json, ConversationJson.class);
     }
 
-    private void setupDiseasesJson() {
-        Gson gson = new Gson();
-        String json = null;
-        try {
-            InputStream inputStream = getAssets().open("diseases.json");
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            inputStream.read(buffer);
-            inputStream.close();
-            json = new String(buffer, "UTF-8");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        diseasesJson = gson.fromJson(json, DiseasesJson.class);
+    private void setupCurrentDisease() {
         for (Disease disease : diseasesJson.getDiseases()) {
             if (disease.type.equals(DrWatsonApplication.currentDiseaseName)) {
                 currentDisease = disease;
@@ -622,7 +608,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-        return "Unexpected symptom.";
+        return "I'm not sure.";
     }
 
     private boolean isKnownSymptom(String symptom) {

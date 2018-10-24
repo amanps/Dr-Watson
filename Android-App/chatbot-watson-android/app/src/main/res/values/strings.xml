@@ -3,4 +3,5 @@
     <string name="what_s_on_your_mind">Say something...</string>
     <string name="tuberculosis">Tuberculosis</string>
     <string name="iron_deficiency">Iron Deficiency</string>
+    <string name="title_activity_diseases">DrWatson</string>
 </resources>
