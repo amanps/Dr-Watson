@@ -2,12 +2,19 @@ package com.example.vmac.WatBot;
 
 import android.app.Application;
 
+import com.google.gson.Gson;
+
+import java.io.IOException;
+import java.io.InputStream;
+
 public class DrWatsonApplication extends Application {
+
+    public static DiseasesJson diseasesJson;
 
     @Override
     public void onCreate() {
         super.onCreate();
-
+        setupDiseasesJson();
     }
 
     public static String WORKSPACE_ID = WorkspaceIds.TB;
@@ -32,5 +39,23 @@ public class DrWatsonApplication extends Application {
 
     public static void setCurrentDiseaseName(String diseaseName) {
         currentDiseaseName = diseaseName;
+    }
+
+    private void setupDiseasesJson() {
+        Gson gson = new Gson();
+        String json = null;
+        try {
+            InputStream inputStream = getAssets().open("diseases.json");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            json = new String(buffer, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        diseasesJson = gson.fromJson(json, DiseasesJson.class);
     }
 }
