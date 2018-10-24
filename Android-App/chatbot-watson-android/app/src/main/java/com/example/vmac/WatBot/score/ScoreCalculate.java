@@ -63,6 +63,9 @@ public class ScoreCalculate implements ScoreCalculator {
                 Message+=".";
             }
         }
+        if(notAsked.size()==0){
+            Message="You missed nothing! Good Job!";
+        }
         return Message;
     }
 }
