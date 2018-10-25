@@ -47,6 +47,7 @@ public class ScoreCalculate implements ScoreCalculator {
     public String MissSymptoms(ArrayList<String> AllSymptoms,
             ArrayList<String> AskedSymptoms) {
         String Message = "You missed the following symptoms: ";
+        String Symptom = "";
         ArrayList<String> notAsked = AllSymptoms;
         for (int i = 0; i < AllSymptoms.size(); i++) {
             if (AllSymptoms.contains(AskedSymptoms.get(i))) {
@@ -54,18 +55,19 @@ public class ScoreCalculate implements ScoreCalculator {
             }
         }
         for (int i = 0; i < notAsked.size(); i++) {
-            String Symptom = notAsked.get(i).substring(0, 1).toUpperCase()
-                    + notAsked.get(i).substring(1);
+            if (notAsked.get(i).length() > 1) {
+                Symptom = notAsked.get(i).substring(0, 1).toUpperCase()
+                        + notAsked.get(i).substring(1);
+            } else {
+                Symptom = notAsked.get(i).substring(0, 1).toUpperCase();
+            }
             Symptom.replace("_", " ");
             Message += Symptom;
-            if(i!=notAsked.size()-1){
-                Message+=", ";
-            }else{
-                Message+=".";
+            if (i != notAsked.size() - 1) {
+                Message += ", ";
+            } else {
+                Message += ".";
             }
-        }
-        if(notAsked.size()==0){
-            Message="You missed nothing! Good Job!";
         }
         return Message;
     }
