@@ -46,7 +46,7 @@ public class ScoreCalculate implements ScoreCalculator {
     @Override
     public String MissSymptoms(ArrayList<String> AllSymptoms,
             ArrayList<String> AskedSymptoms) {
-        String Message = "";
+        String Message = "You missed the following symptoms: ";
         ArrayList<String> notAsked = AllSymptoms;
         for (int i = 0; i < AllSymptoms.size(); i++) {
             if (AllSymptoms.contains(AskedSymptoms.get(i))) {
@@ -57,7 +57,7 @@ public class ScoreCalculate implements ScoreCalculator {
             String Symptom = notAsked.get(i).substring(0, 1).toUpperCase()
                     + notAsked.get(i).substring(1);
             Symptom.replace("_", " ");
-            Message = "You missed the following symptoms: " + Symptom;
+            Message += Symptom;
             if(i!=notAsked.size()-1){
                 Message+=", ";
             }else{
