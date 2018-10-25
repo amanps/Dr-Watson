@@ -37,7 +37,7 @@ public class ScoreCalculate implements ScoreCalculator {
             }
             if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
                 score += 30;
-                score += (countTotal - correctSymptoms) * 30 / countTotal;
+                score += (correctSymptoms) * 30 / countTotal;
             }
         }
         return score;
