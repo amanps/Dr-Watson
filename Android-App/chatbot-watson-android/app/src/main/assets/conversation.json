@@ -311,6 +311,42 @@
       "open": [
         "I think I might have the cold or flu. I've been taking over-the-counter medication, but it's not doing much. I've been drinking a lot of fluids, but it's difficult to have a full meal."
       ]
+    },
+    {
+      "type": "yellow_fever",
+      "open": [
+        "I'm pretty sure I have the flu. I feel like I have a fever and I haven't been eating alot lately."
+      ]
+    },
+    {
+      "type": "tonsillitis",
+      "open": [
+        "My throat is in alot of pain lately. It's hard to eat because of it and I have been feeling tired all the time."
+      ]
+    },
+    {
+      "type": "sinusitis",
+      "open": [
+        "I haven't been able to breath out of my nose for a while now and on top of that I have a pretty bad headache."
+      ]
+    },
+    {
+      "type": "prostate_cancer",
+      "open": [
+        "I have been peeing like 11 times a day. I don't really think that is normal so I am just coming in to make sure everything is alright."
+      ]
+    },
+    {
+      "type": "polio",
+      "open": [
+        "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately."
+      ]
+    },
+    {
+      "type": "pneumonia",
+      "open": [
+        "Well I have had a cough and the chills for a little bit now. Also I haven't been eating alot lately."
+      ]
     }
   ]
 }
