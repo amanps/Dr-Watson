@@ -31,13 +31,13 @@ public class ScoreCalculate implements ScoreCalculator {
         } else if (ResponsedAnswer.size() == 1) {
             for (int i = 0; i < countAsked; i++) {
                 if (AllSymptoms.contains(AskedSymptoms.get(i))) {
-                    score += 40 / countTotal;
+                    score += 30 / countTotal;
                     correctSymptoms++;
                 }
             }
             if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
-                score += 30;
-                score += (correctSymptoms) * 30 / countTotal;
+                score += 50;
+                score += (correctSymptoms) * 20 / countTotal;
             }
         }
         return score;
