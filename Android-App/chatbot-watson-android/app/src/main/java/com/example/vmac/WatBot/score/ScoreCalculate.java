@@ -34,10 +34,10 @@ public class ScoreCalculate implements ScoreCalculator {
                     score += 40 / countTotal;
                     correctSymptoms++;
                 }
-                if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
-                    score += 30;
-                    score += (countTotal - correctSymptoms) * 30 / countTotal;
-                }
+            }
+            if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
+                score += 30;
+                score += (countTotal - correctSymptoms) * 30 / countTotal;
             }
         }
         return score;
