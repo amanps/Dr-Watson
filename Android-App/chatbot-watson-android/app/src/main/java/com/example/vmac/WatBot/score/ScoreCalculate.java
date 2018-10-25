@@ -9,6 +9,7 @@ public class ScoreCalculate implements ScoreCalculator {
                         ArrayList<String> askedSymptoms, ArrayList<String> ResponsedAnswer,
                         String CorrectAnswer) {
         int score = 0;
+        int correctSymptoms = 0;
         int countTotal = allSymptoms.size();
         int countAsked = askedSymptoms.size();
 
