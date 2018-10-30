@@ -261,6 +261,108 @@
       ]
     },
     {
+      "type": "anxiety",
+      "positive": [
+        "Yes I have been feeling pretty anxious.",
+        "My anxiety has been through the roof lately."
+      ],
+      "negative": [
+        "I don't think I have any anxiety lately.",
+        "I wouldn't say so no."
+      ]
+    },
+    {
+      "type": "pain",
+      "positive": [
+        "Yes I have had pain recently.",
+        "I have definitely been in some pain lately."
+      ],
+      "negative": [
+        "Not really.",
+        "No I don't think so."
+      ]
+    },
+    {
+      "type": "sleep_disturbance",
+      "positive": [
+        "I haven't had a good nights sleep in a while.",
+        "Yes I always wake up in the middle of the night.",
+        "Yeah, it is hard for me to sleep through the night."
+      ],
+      "negative": [
+        "No I have no problem sleeping through the night.",
+        "No I have been sleeping well."
+      ]
+    },
+    {
+      "type": "dizziness",
+      "positive": [
+        "Yes I have been feeling dizzy.",
+        "Lately I have been getting dizzy at random times."
+      ],
+      "negative": [
+        "No I have not been getting dizzy.",
+        "Not at all."
+      ]
+    },
+    {
+      "type": "pain_in_eyes",
+      "positive": [
+        "Yes my eyes have been hurting.",
+        "Yeah my eyes have been in pain recently."
+      ],
+      "negative": [
+        "No my eyes have been fine.",
+        "No my eyes are okay.",
+        "I don't think so."
+      ]
+    },
+    {
+      "type": "wheezing",
+      "positive": [
+        "Yes, when I breath it has a whistling sound.",
+        "Yeah my breathing sounds funny."
+      ],
+      "negative": [
+        "No my breathing has been fine.",
+        "No I haven't noticed any wheezing."
+      ]
+    },
+    {
+      "type": "rash",
+      "positive": [
+        "Yes I have a weird rash on my arm.",
+        "I do have a couple rashes on my body."
+      ],
+      "negative": [
+        "No I don't have any rashes.",
+        "I don't believe I do.",
+        "None that I am aware of."
+      ]
+    },
+    {
+      "type": "sneezing",
+      "positive": [
+        "Yes I have been sneezing alot lately.",
+        "Yeah my sneezing has been out of control."
+      ],
+      "negative": [
+        "Not any more than normal.",
+        "I haven't been sneezing no."
+      ]
+    },
+    {
+      "type": "bleeding",
+      "positive":[
+        "Yes I have been.",
+        "Yes there has been blood especially when I wipe."
+      ],
+      "negative": [
+        "No that hasn't been happening.",
+        "No not at all."
+      ]
+    },
+    {
       "type": "headache",
       "positive": [
         "Yeah, I've been having random headache.",
@@ -283,6 +385,52 @@
       ]
     },
     {
+      "type": "chest_pain",
+      "positive": [
+        "I have been having pain in my chest for a while now.",
+        "I have been experiencing chest pains yes.",
+        "Yes, my chest has had some pain here and there."
+      ],
+      "negative": [
+        "No I don't have any chest pain.",
+        "Not really.",
+        "I haven't had any chest pains."
+      ]
+    },
+    {
+      "type": "excessive_daytime_sleepiness",
+      "positive": [
+        "It has been hard for me to get through the day without being tired.",
+        "Yes I usually get very tired during the day."
+      ],
+      "negative": [
+        "No I can get through the day without being tired.",
+        "Not really. I haven't been feeling tired during the day."
+      ]
+    },
+    {
+      "type": "difficulty_swallowing",
+      "positive": [
+        "Yes, it has been hard for me to swallow anything lately.",
+        "Yeah swallowing has become hard for me."
+      ],
+      "negative": [
+        "No I have been swallowing fine.",
+        "No I haven't had any trouble swallowing."
+      ]
+    },
+    {
+      "type": "muscle_pain",
+      "positive": [
+        "Yes my muscles have been in alot of pain lately.",
+        "Yes I have been having aches and pains."
+      ],
+      "negative": [
+        "No I have not been experiencing that.",
+        "No I haven't had any muscle pain."
+      ]
+    },
+    {
       "type": "muscle_weakness",
       "positive": [
         "Yeah, my muscles have been feeling sore.",
@@ -302,6 +450,17 @@
       ],
       "negative": [
         "No, I do have any red patches on my body."
+      ]
+    },
+    {
+      "type": "vomiting",
+      "positive": [
+        "Yeah I have been throwing up alot lately.",
+        "Yes I have been vomiting."
+      ],
+      "negative": [
+        "No I haven't been throwing up.",
+        "No I have not been vomiting."
       ]
     }
   ],
