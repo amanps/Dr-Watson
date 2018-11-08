@@ -77,7 +77,7 @@
    "type": "cystic_fibrosis",
    "symptoms": [
     "wheezing",
-    "coughing",
+    "cough",
     "recurring_chest_infection"
    ]
   },
@@ -117,7 +117,7 @@
   {
    "type": "flu",
    "symptoms": [
-    "chesty_cough",
+    "cough",
     "fever",
     "chills",
     "weakness"
@@ -127,7 +127,7 @@
    "type": "gout",
    "symptoms": [
     "joint_pain",
-    "red,_shiny_skin_over_the_affected_joint"
+    "red_shiny_skin_over_the_affected_joint"
    ]
   },
   {
@@ -302,7 +302,7 @@
     "sore_throat",
     "difficulty_swallowing",
     "fever",
-    "coughing",
+    "cough",
     "headache",
     "fatigue"
    ]
