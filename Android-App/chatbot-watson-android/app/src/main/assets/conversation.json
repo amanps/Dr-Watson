@@ -573,6 +573,72 @@
         "No I haven't been throwing up.",
         "No I have not been vomiting."
       ]
+    },
+    {
+      "type": "green_or_yellow_mucus_from_your_nose",
+      "positive": [
+        "Yeah when I blow my nose it a greenish yellow color.",
+        "Yes it has been that color when I blow my nose."
+      ],
+      "negative": [
+        "No I haven't noticed anything that like.",
+        "No my mucus has been pretty normal colored I'd say."
+      ]
+    },
+    {
+      "type": "feeling_like_your_bladder_isnt_fully_emptied",
+      "positive": [
+        "Yeah I always feeling like I have to go more but nothing comes out.",
+        "Yes it has been very annoying because I feel like more needs to come out but it never does."
+      ],
+      "negative": [
+        "No, going to the bathroom has been fine.",
+        "No peeing has been pretty normal."
+      ]
+    },
+    {
+      "type": "weight_gain",
+      "positive": [
+        "Yeah I have been gaining weight.",
+        "Yes, my weight has increased but I haven't changed my diet at all."
+      ],
+      "negative": [
+        "No my weight has been pretty consistent.",
+        "No I haven't gained any weight."
+      ]
+    },
+    {
+      "type": "pain_during_urination",
+      "positive": [
+        "Yes, going to the bathroom has not been fun.",
+        "Yeah, peeing has been pretty painful."
+      ],
+      "negative": [
+        "No I haven't had any pain when I pee.",
+        "No peeing has been fine for me."
+      ]
+    },
+    {
+      "type": "rapid_heartbeat",
+      "positive": [
+        "Yes my heart rate has seemed much faster than normal.",
+        "Yeah my heart beat defintely feels faster."
+      ],
+      "negative": [
+        "I don't think it has been faster than normal.",
+        "No I don't believe so."
+      ]
+    },
+    {
+      "type": "indigestion",
+      "positive": [
+        "Yes I have been having indigestion.",
+        "Yeah, my upper stomach area has been in some pain."
+      ],
+      "negative": [
+        "No I haven't had any pain in my stomach area so I don't think so.",
+        "No I haven't had any indigestion."
+      ]
     }
   ],
   "diseases": [
