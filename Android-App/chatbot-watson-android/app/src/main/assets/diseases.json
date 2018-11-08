@@ -13,7 +13,7 @@
    "symptoms": [
     "nausea",
     "loss_of_appetite",
-    "diarrhoea",
+    "diarrhea",
     "fever"
    ]
   },
@@ -23,13 +23,13 @@
     "confusion",
     "hallucinations",
     "pesonality_changes",
-    "low_mood"
+    "depression"
    ]
   },
   {
    "type": "bulimia",
    "symptoms": [
-    "depression_",
+    "depression",
     "anxiety",
     "isolation",
     "obsessive_attitude_towards_food_and_eating"
@@ -66,7 +66,7 @@
   {
    "type": "crohn's_disease",
    "symptoms": [
-    "diarrhoea",
+    "diarrhea",
     "abdominal_pain",
     "fatigue",
     "weight_loss",
@@ -86,7 +86,7 @@
    "symptoms": [
     "rash",
     "fever",
-    "painful_muscles",
+    "muscle_pain",
     "headache",
     "loss_of_appetitie"
    ]
@@ -109,7 +109,7 @@
   {
    "type": "haemorrhoids",
    "symptoms": [
-    "bleeeding_",
+    "bleeding",
     "itchy_bottom",
     "mucus_discharge"
    ]
@@ -157,7 +157,7 @@
    "symptoms": [
     "fever",
     "headache",
-    "blotchy_rash",
+    "rash",
     "stiff_neck",
     "drowsiness",
     "seizures",
@@ -243,7 +243,7 @@
     "pain_around_the_pelvis",
     "pain_during_sex",
     "pain_during_urination",
-    "bleeding_between_periods"
+    "bleeding"
    ]
   },
   {
@@ -265,7 +265,7 @@
     "sore_throat",
     "headache",
     "stomachache",
-    "muscle_aches"
+    "muscle_pain"
    ]
   },
   {

@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class ScoreCalculate implements ScoreCalculator {
 
     @Override
-    public int getScore(ArrayList<String> allSymptoms,
-                        ArrayList<String> askedSymptoms, ArrayList<String> ResponsedAnswer,
-                        String CorrectAnswer) {
+    public int getScore(ArrayList<String> AllSymptoms,
+            ArrayList<String> AskedSymptoms, ArrayList<String> ResponsedAnswer,
+            String CorrectAnswer) {
         int score = 0;
         int correctSymptoms = 0;
-        int countTotal = allSymptoms.size();
-        int countAsked = askedSymptoms.size();
+        int countTotal = AllSymptoms.size();
+        int countAsked = AskedSymptoms.size();
 
         if (ResponsedAnswer.size() > 1) {
             for (int i = 0; i < ResponsedAnswer.size(); i++) {
@@ -37,31 +37,44 @@ public class ScoreCalculate implements ScoreCalculator {
             }
             if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
                 score += 50;
-                score += (correctSymptoms) * 20 / countTotal;
+                score += (correctSymptoms) * 20 / countAsked;
             }
         }
         return score;
     }
-
+    
     @Override
     public String MissSymptoms(ArrayList<String> AllSymptoms,
             ArrayList<String> AskedSymptoms) {
         String Message = "You missed the following symptoms: ";
         String Symptom = "";
         ArrayList<String> notAsked = AllSymptoms;
-        for (int i = 0; i < AllSymptoms.size(); i++) {
+        for (int i = 0; i < AskedSymptoms.size(); i++) {
             if (AllSymptoms.contains(AskedSymptoms.get(i))) {
                 notAsked.remove(AskedSymptoms.get(i));
             }
+        }
+        if (notAsked.size() == 0) {
+            Message = "You've got all of the symptoms. Great Job!";
+            return Message;
         }
         for (int i = 0; i < notAsked.size(); i++) {
             if (notAsked.get(i).length() > 1) {
                 Symptom = notAsked.get(i).substring(0, 1).toUpperCase()
                         + notAsked.get(i).substring(1);
-            } else {
+                int index = Symptom.indexOf('_');
+                if (index >= 0) {
+                    Symptom = notAsked.get(i).substring(0, 1).toUpperCase()
+                            + notAsked.get(i).substring(1, index) + ' '
+                            + notAsked.get(i).substring(index + 1);
+                }
+            } else if (notAsked.get(i).length() == 1) {
                 Symptom = notAsked.get(i).substring(0, 1).toUpperCase();
+                int index = Symptom.indexOf('_');
+                if (index >= 0) {
+                    Symptom = " ";
+                }
             }
-            Symptom.replace("_", " ");
             Message += Symptom;
             if (i != notAsked.size() - 1) {
                 Message += ", ";
