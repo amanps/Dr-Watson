@@ -31,7 +31,6 @@
    "symptoms": [
     "depression",
     "anxiety",
-    "isolation",
     "obsessive_attitude_towards_food_and_eating"
    ]
   },
@@ -47,7 +46,6 @@
   {
    "type": "chronic_fatigue_syndrome",
    "symptoms": [
-    "pain",
     "sleep_disturbance",
     "dizziness",
     "nausea",
@@ -95,7 +93,6 @@
    "type": "gallbladder_cancer",
    "symptoms": [
     "abdominal_pain",
-    "sick",
     "jaundice"
    ]
   },
