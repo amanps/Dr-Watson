@@ -659,7 +659,7 @@
       "open": [
         "My throat is in alot of pain lately. It's hard to eat because of it and I have been feeling tired all the time."
       ]
-    },
+    },/*
     {
       "type": "sinusitis",
       "open": [
@@ -677,7 +677,7 @@
       "open": [
         "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately. It seems like a cold or something to me."
       ]
-    },
+    },*/
     {
       "type": "pneumonia",
       "open": [
@@ -718,6 +718,18 @@
       "type": "migraine",
       "open": [
         "I have been having pretty bad headaches lately and was seeing if I could get anything to help with them."
+      ]
+    },
+    {
+      "type": "migraine",
+      "open": [
+        "Occasionally in the morning, my head kind of hurts. And after a hard day at work when I'm driving home, the sun appears brighter than normal."
+      ]
+    },
+    {
+      "type": "chickenpox",
+      "open": [
+	     "I have blisters that are super-itchy. I noticed them initially on my arms, but recently it's begun to spread all over my body."    
       ]
     }
   ]
