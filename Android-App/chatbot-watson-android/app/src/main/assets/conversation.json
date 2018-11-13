@@ -701,6 +701,12 @@
       "open": [
         "It has been a few weeks since I came back from a camping trip. Now I think I have the flu."
       ]
+    },
+    {
+      "type": "flu",
+      "open": [
+        "I been feeling feverish and sluggish for the last few days."
+      ]
     }
   ]
 }
