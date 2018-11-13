@@ -659,7 +659,7 @@
       "open": [
         "My throat is in alot of pain lately. It's hard to eat because of it and I have been feeling tired all the time."
       ]
-    },
+    },/*
     {
       "type": "sinusitis",
       "open": [
@@ -677,7 +677,7 @@
       "open": [
         "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately."
       ]
-    },
+    },*/
     {
       "type": "pneumonia",
       "open": [
