@@ -651,7 +651,7 @@
     {
       "type": "yellow_fever",
       "open": [
-        "I'm pretty sure I have the flu. I feel like I have a fever and I haven't been eating alot lately."
+        "I'm pretty sure I have the flu. I feel like I have a fever and I haven't been eating as much as I normally do lately."
       ]
     },
     {
@@ -675,13 +675,43 @@
     {
       "type": "polio",
       "open": [
-        "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately."
+        "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately. It seems like a cold or something to me."
       ]
     },*/
     {
       "type": "pneumonia",
       "open": [
-        "Well I have had a cough and the chills for a little bit now. Also I haven't been eating alot lately."
+        "Well I have had a cough and the chills for a little bit now and I wanted to see whats going on."
+      ]
+    },
+    {
+      "type": "arthritis",
+      "open":[
+        "Well my right hand has been pain as of late. Whenever I go to grab something it hurts pretty bad."
+      ]
+    },
+    {
+      "type": "appendicitis",
+      "open": [
+        "I'm just having some killer pain near my stomach and I wanted to come in to make sure it was nothing serious."
+      ]
+    },
+    {
+      "type": "chickenpox",
+      "open": [
+        "Well I just got this weird rash a little bit ago and I was hoping you would be able to give me something to stop the itching."
+      ]
+    },
+    {
+      "type": "flu",
+      "open": [
+        "I have been feeling pretty warm lately and just generally not very good."
+      ]
+    },
+    {
+      "type": "malaria",
+      "open": [
+        "I just returned from a trip overseas and I have been feeling pretty warm like I have a fever."
       ]
     },
     {
@@ -693,7 +723,7 @@
     {
       "type": "chickenpox",
       "open": [
-	     "I have blisters that are super-itchy. I noticed them initially on my arms, but recently it's begun to spread all over my body."    
+	     "I have blisters that are super-itchy. I noticed them initially on my arms, but recently it's begun to spread all over my body."
       ]
     },
     {
