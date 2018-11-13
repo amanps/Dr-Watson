@@ -697,24 +697,6 @@
       ]
     },
     {
-      "type": "chickenpox",
-      "open": [
-        "Well I just got this weird rash a little bit ago and I was hoping you would be able to give me something to stop the itching."
-      ]
-    },
-    {
-      "type": "flu",
-      "open": [
-        "I have been feeling pretty warm lately and just generally not very good."
-      ]
-    },
-    {
-      "type": "malaria",
-      "open": [
-        "I just returned from a trip overseas and I have been feeling pretty warm like I have a fever."
-      ]
-    },
-    {
       "type": "migraine",
       "open": [
         "Occasionally in the morning, my head kind of hurts. And after a hard day at work when I'm driving home, the sun appears brighter than normal."
