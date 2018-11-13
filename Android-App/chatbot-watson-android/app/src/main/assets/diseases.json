@@ -13,7 +13,7 @@
    "symptoms": [
     "nausea",
     "loss_of_appetite",
-    "diarrhoea",
+    "diarrhea",
     "fever"
    ]
   },
@@ -31,7 +31,6 @@
    "symptoms": [
     "depression",
     "anxiety",
-    "isolation",
     "obsessive_attitude_towards_food_and_eating"
    ]
   },
@@ -47,7 +46,6 @@
   {
    "type": "chronic_fatigue_syndrome",
    "symptoms": [
-    "pain",
     "sleep_disturbance",
     "dizziness",
     "nausea",
@@ -66,7 +64,7 @@
   {
    "type": "crohn's_disease",
    "symptoms": [
-    "diarrhoea",
+    "diarrhea",
     "abdominal_pain",
     "fatigue",
     "weight_loss",
@@ -95,7 +93,6 @@
    "type": "gallbladder_cancer",
    "symptoms": [
     "abdominal_pain",
-    "sick",
     "jaundice"
    ]
   },
@@ -197,7 +194,7 @@
    "type": "neuroblastoma",
    "symptoms": [
     "stomachache",
-    "breathlessness",
+    "shortness_of_breath",
     "difficulty_swallowing",
     "a_lump_in_the_neck",
     "fatigue",

@@ -272,17 +272,6 @@
       ]
     },
     {
-      "type": "pain",
-      "positive": [
-        "Yes I have had pain recently.",
-        "I have definitely been in some pain lately."
-      ],
-      "negative": [
-        "Not really.",
-        "No I don't think so."
-      ]
-    },
-    {
       "type": "sleep_disturbance",
       "positive": [
         "I haven't had a good nights sleep in a while.",
@@ -453,6 +442,128 @@
       ]
     },
     {
+      "type": "sensitivity_to_light",
+      "positive": [
+        "Yes I have had a hard time looking at bright lights.",
+        "Yeah looking at anything bright hurts pretty bad.",
+        "I would say so. I have had to wear sunglasses everywhere."
+      ],
+      "negative": [
+        "No, my eyes haven't been sensitive to light.",
+        "I wouldn't say so."
+      ]
+    },
+    {
+      "type": "shortness_of_breath",
+      "positive": [
+        "It has been pretty hard for me to catch my breath lately yes.",
+        "Yeah going up stairs or anything like that has been hard."
+      ],
+      "negative": [
+        "No that hasn't been a problem lately.",
+        "Well going up stairs is hard but thats just because I'm out of shape! So not anymore than normal."
+      ]
+    },
+    {
+      "type": "itchy_bottom",
+      "positive": [
+        "Yeah it has been pretty itchy lately.",
+        "It has definitely been more itchly than normal."
+      ],
+      "negative": [
+        "Not anymore than normal!",
+        "No everything has been fine down there."
+      ]
+    },
+    {
+      "type": "puffiness_of_the_skin",
+      "positive": [
+        "Yeah there is some puffiness in a couple areas.",
+        "Yes my skin has been unusually puffy lately."
+      ],
+      "negative": [
+        "I haven't noticed anything like that no.",
+        "No I think my skin has been fine."
+      ]
+    },
+    {
+      "type": "pain_around_the_pelvis",
+      "positive": [
+        "Yes that area has been pretty sensitive.",
+        "Yeah my pelvis has been in pain."
+      ],
+      "negative": [
+        "No that area has been fine.",
+        "Not really, I'm pretty sure my pelvis is alright."
+      ]
+    },
+    {
+      "type": "irregular_periods",
+      "positive": [
+        "Yes my periods have been very irregular.",
+        "Yeah they haven't been predictable at all."
+      ],
+      "negative": [
+        "No they've been regular.",
+        "Nope they have been just fine."
+      ]
+    },
+    {
+      "type": "increased_need_to_pee",
+      "positive": [
+        "Yes I have to pee all the time.",
+        "Yeah I defintely have been going to the bathroom more than normal."
+      ],
+      "negative": [
+        "No I have been going a normal amount I would say.",
+        "Not really."
+      ]
+    },
+    {
+      "type": "reduced_sense_of_smell",
+      "positive": [
+        "Yes I haven't been able to smell well at all.",
+        "Now that you mention it I haven't been smelling much of anything."
+      ],
+      "negative": [
+        "No my sense of smell is as strong as ever.",
+        "No smelling has not been a problem for me."
+      ]
+    },
+    {
+      "type": "straining_while_you_pee",
+      "positive": [
+        "Yes that has definitely been a problem with me.",
+        "Yeah I have been straining while going lately."
+      ],
+      "negative": [
+        "No I haven't had a problem peeing.",
+        "No going to the bathroom has been normal for me."
+      ]
+    },
+    {
+      "type": "excessive_hair_growth",
+      "positive": [
+        "Yes my hair has been growing much quicker than normal.",
+        "Yeah I would say so. I have been growing hair faster than usual."
+      ],
+      "negative": [
+        "No I haven't noticed anything like that.",
+        "No my hair growth has been pretty normal."
+      ]
+    },
+    {
+      "type": "pain_during_sex",
+      "positive": [
+        "Yes I have been avoiding sex because the last couple of time it was pretty painful for me.",
+        "Yeah the last couple of times has been very painful. I had to stop in the middle a couple of times."
+      ],
+      "negative": [
+        "No, my sex life has been great.",
+        "Not at all. Sex has been normal for me."
+      ]
+    },
+    {
       "type": "vomiting",
       "positive": [
         "Yeah I have been throwing up alot lately.",
@@ -461,6 +572,72 @@
       "negative": [
         "No I haven't been throwing up.",
         "No I have not been vomiting."
+      ]
+    },
+    {
+      "type": "green_or_yellow_mucus_from_your_nose",
+      "positive": [
+        "Yeah when I blow my nose it a greenish yellow color.",
+        "Yes it has been that color when I blow my nose."
+      ],
+      "negative": [
+        "No I haven't noticed anything that like.",
+        "No my mucus has been pretty normal colored I'd say."
+      ]
+    },
+    {
+      "type": "feeling_like_your_bladder_isnt_fully_emptied",
+      "positive": [
+        "Yeah I always feeling like I have to go more but nothing comes out.",
+        "Yes it has been very annoying because I feel like more needs to come out but it never does."
+      ],
+      "negative": [
+        "No, going to the bathroom has been fine.",
+        "No peeing has been pretty normal."
+      ]
+    },
+    {
+      "type": "weight_gain",
+      "positive": [
+        "Yeah I have been gaining weight.",
+        "Yes, my weight has increased but I haven't changed my diet at all."
+      ],
+      "negative": [
+        "No my weight has been pretty consistent.",
+        "No I haven't gained any weight."
+      ]
+    },
+    {
+      "type": "pain_during_urination",
+      "positive": [
+        "Yes, going to the bathroom has not been fun.",
+        "Yeah, peeing has been pretty painful."
+      ],
+      "negative": [
+        "No I haven't had any pain when I pee.",
+        "No peeing has been fine for me."
+      ]
+    },
+    {
+      "type": "rapid_heartbeat",
+      "positive": [
+        "Yes my heart rate has seemed much faster than normal.",
+        "Yeah my heart beat defintely feels faster."
+      ],
+      "negative": [
+        "I don't think it has been faster than normal.",
+        "No I don't believe so."
+      ]
+    },
+    {
+      "type": "indigestion",
+      "positive": [
+        "Yes I have been having indigestion.",
+        "Yeah, my upper stomach area has been in some pain."
+      ],
+      "negative": [
+        "No I haven't had any pain in my stomach area so I don't think so.",
+        "No I haven't had any indigestion."
       ]
     }
   ],
