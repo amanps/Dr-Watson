@@ -169,7 +169,7 @@
     {
       "type": "abdominal_pain",
       "positive": [
-        "Yes I have.",
+        "Yes I have do have abdominal pain every now and then.",
         "Yeah it hurts pretty often."
       ],
       "negative": [
@@ -354,7 +354,7 @@
     {
       "type": "headache",
       "positive": [
-        "Yeah, I've been having random headache.",
+        "Yeah, I've been having random headaches.",
         "Now that you mention it, I have been experiencing headaches throughout the day.",
         "Yes, a few headaches here and there."
       ],
@@ -659,7 +659,7 @@
       "open": [
         "My throat is in alot of pain lately. It's hard to eat because of it and I have been feeling tired all the time."
       ]
-    },/*
+    },
     {
       "type": "sinusitis",
       "open": [
@@ -677,7 +677,7 @@
       "open": [
         "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately. It seems like a cold or something to me."
       ]
-    },*/
+    },
     {
       "type": "pneumonia",
       "open": [

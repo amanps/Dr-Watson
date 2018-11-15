@@ -626,7 +626,7 @@ public class MainActivity extends AppCompatActivity {
                 return disease.open.get(0);
             }
         }
-        return "Unexpected symptom";
+        return "I'm not sure, doctor. It's just not a nice feeling.";
     }
 
     private String getRandomAge() {
@@ -640,10 +640,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getScoreMessage(String answer) {
+        if (answer == null || answer.isEmpty()) {
+            return "Please try that again. You can try saying, \"I think the patient has...\".";
+        }
         ArrayList<String> allSymptoms = new ArrayList<>();
+
         for (Disease disease : diseasesJson.getDiseases()) {
             if (disease.type.equals(DrWatsonApplication.currentDiseaseName)) {
-                allSymptoms = disease.symptoms;
+                allSymptoms = new ArrayList<>(disease.symptoms);
+                break;
             }
         }
 
@@ -651,7 +656,7 @@ public class MainActivity extends AppCompatActivity {
         answers.add(answer);
         ScoreCalculator scoreCalculator = new ScoreCalculate();
 
-        return "Your score is " + scoreCalculator.getScore(allSymptoms, symptomsAsked, answers, currentDisease.type);
+        return scoreCalculator.getScore(allSymptoms, new ArrayList<>(symptomsAsked), answers, currentDisease.type);
     }
 
 }
