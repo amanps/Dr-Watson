@@ -639,6 +639,84 @@
         "No I haven't had any pain in my stomach area so I don't think so.",
         "No I haven't had any indigestion."
       ]
+    },
+    {
+      "type": "skin_discoloration",
+      "positive": [
+        "I have had some discoloration around the swollen areas of my body.",
+        "Yes some of the affected area has turned a weird color."
+      ],
+      "negative": [
+        "No I haven't noticed any discoloration of any kind.",
+        "No, I don't think I have experienced any of that."
+      ]
+    },
+    {
+      "type": "sleep_attacks",
+      "positive": [
+        "Yes, sometimes randomly throughout the day I will just fall asleep.",
+        "Yes I would say so. I will just fall asleep randomly no matter what I am doing.",
+        "Yeah I will fall asleep out of no where it seems."
+      ],
+      "negative": [
+        "No I don't fall asleep randomly like that.",
+        "If you mean do I fall asleep at random times then no."
+      ]
+    },
+    {
+      "type": "red,_shiny_skin_over_the_affected_joint",
+      "positive": [
+        "Yes that area has been pretty red.",
+        "Yeah, the joint is pretty red and shiny."
+      ],
+      "negative": [
+        "No, the joint isn't red or shiny.",
+        "No, I haven't noticed the joint being red or shiny."
+      ]
+    },
+    {
+      "type": "disturbed_vision",
+      "positive": [
+        "Yes, I have noticed I have alot of build up in my eye especially when I wake up in the morning.",
+        "Yeah there are a lot of times when I need to blink many times before it is back to normal."
+      ],
+      "negative": [
+        "No I wouldn't say my vision has been disturbed or anything like that.",
+        "No, my vision has been fine lately."
+      ]
+    },
+    {
+      "type": "recurring_chest_infection",
+      "positive": [
+        "Yes I have had a couple of chest infections this year. It's more than I have gotten my entire life.",
+        "Yeah, I have had chest infections and they keep coming back no matter what I do."
+      ],
+      "negative": [
+        "No I haven't had any problems with chest infections.",
+        "No my chest has been fine."
+      ]
+    },
+    {
+      "type": "mucus_discharge",
+      "positive": [
+        "Yeah I notice some in my underwear at the end of a long day.",
+        "Yes, when I wipe I can tell mucus is there."
+      ],
+      "negative": [
+        "No I haven't noticed any discharge or anything like that.",
+        "No, I haven't had any mucus discharge."
+      ]
+    },
+    {
+      "type": "aching_limbs",
+      "positive": [
+        "Yes, my limbs have definitely been aching lately. It's tough going up stairs or any type of cardio.",
+        "Yeah I have noticed some achiness."
+      ],
+      "negative": [
+        "No I haven't had any problems like that.",
+        "No I would say my limbs are still going strong!"
+      ]
     }
   ],
   "diseases": [
