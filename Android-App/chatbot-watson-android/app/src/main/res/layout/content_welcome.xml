@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_above="@id/next_btn">
+
+        <TextView
+            android:id="@+id/iama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Dr. Watson"
+            android:textColor="#fafafa"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-bold"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/iama2"
+            android:layout_below="@id/iama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select an option"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/doctor"
+            android:layout_below="@id/iama2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:src="@drawable/doctor"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/doctor_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="Resident Advisor"
+                    android:textColor="#fafafa"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resident"
+            android:layout_below="@id/doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/resident"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/resident_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent"
+                    android:text="Resident"
+                    android:textColor="#fafafa"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:onClick="onNextClicked"
+        android:text="NEXT"/>
+
+</RelativeLayout>

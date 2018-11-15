@@ -22,7 +22,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -36,7 +36,8 @@
         <activity
             android:name=".DiseasesActivity"
             android:label="@string/title_activity_diseases"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".WelcomeActivity"></activity>
     </application>
 
 </manifest>

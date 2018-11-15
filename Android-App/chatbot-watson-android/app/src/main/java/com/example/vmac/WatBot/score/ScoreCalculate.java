@@ -50,7 +50,7 @@ public class ScoreCalculate implements ScoreCalculator {
 
         {
             if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
-                finalMesg = "Congratulations! You have identified the diesease correctly. \n";
+                finalMesg = "Congratulations! You have identified the disease correctly. \n";
                 checkedAllSym = 30;
                 score += 50;
             }

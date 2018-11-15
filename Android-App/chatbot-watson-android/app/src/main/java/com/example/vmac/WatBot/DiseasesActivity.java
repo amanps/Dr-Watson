@@ -1,10 +1,13 @@
 package com.example.vmac.WatBot;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+
+import java.util.Random;
 
 public class DiseasesActivity extends AppCompatActivity {
 
@@ -23,8 +26,6 @@ public class DiseasesActivity extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        // specify an adapter (see also next example)
-
         String[] diseases = new String[DrWatsonApplication.diseasesJson.getDiseases().size()];
         for (int i = 0; i < diseases.length; i++) {
             String s = DrWatsonApplication.diseasesJson.getDiseases().get(i).type;
@@ -37,8 +38,18 @@ public class DiseasesActivity extends AppCompatActivity {
             diseases[i] = builder.toString();
         }
 
-        mAdapter = new DiseasesAdapter(getApplicationContext(), diseases);
-        mRecyclerView.setAdapter(mAdapter);
+        boolean resident = getIntent().getBooleanExtra("RESIDENT", false);
+        if (resident) {
+            Intent intent = new Intent(this, MainActivity.class);
+            Random random = new Random();
+            String disease = diseases[random.nextInt(diseases.length - 1)];
+            DrWatsonApplication.setCurrentDiseaseName(disease);
+            startActivity(intent);
+            finish();
+        } else {
+            mAdapter = new DiseasesAdapter(getApplicationContext(), diseases);
+            mRecyclerView.setAdapter(mAdapter);
+        }
     }
 
 }
