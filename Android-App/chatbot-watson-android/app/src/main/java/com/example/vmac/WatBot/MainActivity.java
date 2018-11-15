@@ -347,6 +347,7 @@ public class MainActivity extends AppCompatActivity {
                                         outMessage.setMessage(getSymptomMessage(symptom, true));
                                         outMessage.setId("2");
                                     } else {
+                                        symptomsAsked.add(symptom);
                                         outMessage.setMessage(getSymptomMessage(symptom, false));
                                         outMessage.setId("2");
                                     }

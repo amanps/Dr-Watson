@@ -16,7 +16,7 @@ public class ScoreCalculate implements ScoreCalculator {
             return "Whoops, that didn't work. Please try again.";
         }
         if (countAsked == 0) {
-            return "Your score is zero. You failed to ask the patient about any symptoms.";
+            return "Your score is 0.\nYou failed to ask the patient about any symptoms.";
         }
         int checkedAllSym = 60;
         String message = "Your score is ";
