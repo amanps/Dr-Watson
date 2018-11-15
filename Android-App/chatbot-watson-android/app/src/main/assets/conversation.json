@@ -1,28 +1,28 @@
 {
   "name": {
     "male": [
-      "James",
-      "John",
-      "Robert",
-      "Michael",
-      "William"
+      "My name is James.",
+      "My name is John.",
+      "My name is Robert.",
+      "My name is Michael.",
+      "My name is William."
     ],
     "female": [
-      "Mary",
-      "Jenny",
-      "Elizabeth",
-      "Jennifer",
-      "Sarah"
+      "My name is Mary.",
+      "My name is Jenny.",
+      "My name is Elizabeth.",
+      "My name is Jennifer.",
+      "My name is Sarah."
     ]
   },
   "age": [
-    "18",
-    "24",
-    "28",
-    "32",
-    "38",
-    "46",
-    "52"
+    "I am 18 years old.",
+    "I am 24 years old.",
+    "I am 28 years old.",
+    "I am 32 years old.",
+    "I am 38 years old.",
+    "I am 46 years old.",
+    "I am 52 years old."
   ],
   "symptoms": [
     {
