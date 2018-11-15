@@ -62,6 +62,9 @@
       ],
       "negative": [
         "No, I have not been coughing."
+      ],
+      "open": [
+        "I've had a slight cough for the last few weeks."
       ]
     },
     {
@@ -73,28 +76,37 @@
       ],
       "negative": [
         "No, I do not have a fever."
+      ],
+      "open": [
+        "I've been having a slight fever."
       ]
     },
     {
       "type": "nausea",
       "positive": [
         "Yes, I feel like I am going to throw up.",
-        "Yeah I feel nauseous alot."
+        "Yeah I feel nauseated alot."
       ],
       "negative": [
         "Not really.",
         "No I haven't been feeling nauseous lately."
+      ],
+      "open": [
+      "I've been feeling nauseated."
       ]
     },
     {
       "type": "diarrhea",
       "positive": [
-        "Yes I do have diarrhea.",
+        "Yes, I do have diarrhea.",
         "My bowel movements haven't been solid lately."
       ],
       "negative": [
         "No I don't have diarrhea.",
         "Not really my number 2s have been pretty normal."
+      ],
+      "open": [
+        "I've been having diarrhea."
       ]
     },
     {
@@ -108,6 +120,9 @@
         "No my throat feels fine.",
         "Not really, it feels pretty normal.",
         "No I don't have a sore throat."
+      ],
+      "open": [
+        "I've had a sore throat for a few days now."
       ]
     },
     {
@@ -119,6 +134,9 @@
       "negative":[
         "No I don't think so.",
         "Not at all."
+      ],
+      "open": [
+        "I've been confused a lot recently."
       ]
     },
     {
@@ -130,6 +148,9 @@
       "negative": [
         "No I have not had any hallucinations.",
         "Nope I haven't hallucinated at all."
+      ],
+      "open": [
+        "I've recently started hallucinating."
       ]
     },
     {
@@ -141,6 +162,9 @@
       "negative": [
         "No I don't think so.",
         "No I haven't had any personality changes."
+      ],
+      "open": [
+        "I've been noticing some changes in my personality."
       ]
     },
     {
@@ -152,6 +176,9 @@
       "negative": [
         "No I am not depressed.",
         "No I don't have depression."
+      ],
+      "open": [
+        "I've been feeling low."
       ]
     },
     {
@@ -164,6 +191,9 @@
         "No my stomach has been fine lately.",
         "Not at all.",
         "No everything has been normal in that area."
+      ],
+      "open": [
+        "My stomach has been bothering me for a while now."
       ]
     },
     {
@@ -176,6 +206,9 @@
         "No everything has been fine there.",
         "I don't think so.",
         "Not really."
+      ],
+      "open": [
+        "I've been having some pain in my abdomin."
       ]
     },
     {
@@ -188,6 +221,9 @@
         "Not really.",
         "No I don't have a runny nose.",
         "No my nose has been clear."
+      ],
+      "open": [
+        "My nose has done more running than me this last week."
       ]
     },
     {
@@ -200,6 +236,9 @@
       "negative": [
         "No I haven't been fatigued.",
         "Not really."
+      ],
+      "open": [
+        "I've been exhausted recently without doing too much work."
       ]
     },
     {
@@ -213,6 +252,9 @@
         "No I don't have the chills.",
         "No I haven't experienced that.",
         "Not really"
+      ],
+      "open": [
+        "I've been having the chills."
       ]
     },
     {
@@ -224,6 +266,9 @@
       ],
       "negative": [
         "No, I have not experienced night sweats."
+      ],
+      "open": [
+        "For the last few nights, I've been sweating a lot."
       ]
     },
     {
@@ -236,6 +281,9 @@
         "No my back has been fine.",
         "Not really.",
         "No I don't think so."
+      ],
+      "open": [
+        "My back has been hurting."
       ]
     },
     {
@@ -247,6 +295,9 @@
       ],
       "negative": [
         "No, I've maintained the same weight."
+      ],
+      "open": [
+        "I've lost a few pounds."
       ]
     },
     {
@@ -258,6 +309,9 @@
       ],
       "negative": [
         "No, I've my eating habits have not changed."
+      ],
+      "open": [
+        "I haven't been feeling hungry."
       ]
     },
     {
@@ -360,6 +414,9 @@
       ],
       "negative": [
         "No, I have not had a headache recently."
+      ],
+      "open": [
+        "I've been having sudden headaches."
       ]
     },
     {
@@ -371,6 +428,9 @@
       ],
       "negative": [
         "No, I have not had any pain in my joints recently."
+      ],
+      "open": [
+
       ]
     },
     {
@@ -428,6 +488,9 @@
       ],
       "negative": [
         "No, I have not had any weakness in my muscles recently."
+      ],
+      "open": [
+
       ]
     },
     {

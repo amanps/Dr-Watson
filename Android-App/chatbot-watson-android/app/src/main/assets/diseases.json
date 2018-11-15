@@ -124,7 +124,7 @@
    "type": "gout",
    "symptoms": [
     "joint_pain",
-    "red,_shiny_skin_over_the_affected_joint"
+    "red_shiny_skin_over_the_affected_joint"
    ]
   },
   {
@@ -135,7 +135,7 @@
     "vomiting",
     "muscle_pain",
     "diarrhea",
-    "feeling_hot_and_shivery"
+    "chills"
    ]
   },
   {
@@ -230,7 +230,7 @@
     "jaundice",
     "nausea",
     "fever",
-    "shivering"
+    "chills"
    ]
   },
   {
@@ -250,7 +250,7 @@
     "rapid_heartbeat",
     "fever",
     "sweating",
-    "shivering",
+    "chills",
     "loss_of_appetite"
    ]
   },
