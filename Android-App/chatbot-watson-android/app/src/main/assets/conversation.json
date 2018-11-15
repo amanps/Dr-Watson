@@ -315,17 +315,6 @@
       ]
     },
     {
-      "type": "anxiety",
-      "positive": [
-        "Yes I have been feeling pretty anxious.",
-        "My anxiety has been through the roof lately."
-      ],
-      "negative": [
-        "I don't think I have any anxiety lately.",
-        "I wouldn't say so no."
-      ]
-    },
-    {
       "type": "sleep_disturbance",
       "positive": [
         "I haven't had a good nights sleep in a while.",
@@ -505,6 +494,51 @@
       ]
     },
     {
+      "type": "vomiting",
+      "positive": [
+        "Yeah I have been throwing up alot lately.",
+        "Yes I have been vomiting."
+      ],
+      "negative": [
+        "No I haven't been throwing up.",
+        "No I have not been vomiting."
+      ]
+    },
+    {
+      "type": "weight_gain",
+      "positive": [
+        "Yeah I have been gaining weight.",
+        "Yes, my weight has increased but I haven't changed my diet at all."
+      ],
+      "negative": [
+        "No my weight has been pretty consistent.",
+        "No I haven't gained any weight."
+      ]
+    },
+    {
+      "type": "rapid_heartbeat",
+      "positive": [
+        "Yes my heart rate has seemed much faster than normal.",
+        "Yeah my heart beat defintely feels faster."
+      ],
+      "negative": [
+        "I don't think it has been faster than normal.",
+        "No I don't believe so."
+      ]
+    }
+		/*
+		{
+      "type": "anxiety",
+      "positive": [
+        "Yes I have been feeling pretty anxious.",
+        "My anxiety has been through the roof lately."
+      ],
+      "negative": [
+        "I don't think I have any anxiety lately.",
+        "I wouldn't say so no."
+      ]
+    },
+	{
       "type": "sensitivity_to_light",
       "positive": [
         "Yes I have had a hard time looking at bright lights.",
@@ -626,18 +660,7 @@
         "Not at all. Sex has been normal for me."
       ]
     },
-    {
-      "type": "vomiting",
-      "positive": [
-        "Yeah I have been throwing up alot lately.",
-        "Yes I have been vomiting."
-      ],
-      "negative": [
-        "No I haven't been throwing up.",
-        "No I have not been vomiting."
-      ]
-    },
-    {
+	    {
       "type": "green_or_yellow_mucus_from_your_nose",
       "positive": [
         "Yeah when I blow my nose it a greenish yellow color.",
@@ -659,18 +682,7 @@
         "No peeing has been pretty normal."
       ]
     },
-    {
-      "type": "weight_gain",
-      "positive": [
-        "Yeah I have been gaining weight.",
-        "Yes, my weight has increased but I haven't changed my diet at all."
-      ],
-      "negative": [
-        "No my weight has been pretty consistent.",
-        "No I haven't gained any weight."
-      ]
-    },
-    {
+	    {
       "type": "pain_during_urination",
       "positive": [
         "Yes, going to the bathroom has not been fun.",
@@ -681,18 +693,7 @@
         "No peeing has been fine for me."
       ]
     },
-    {
-      "type": "rapid_heartbeat",
-      "positive": [
-        "Yes my heart rate has seemed much faster than normal.",
-        "Yeah my heart beat defintely feels faster."
-      ],
-      "negative": [
-        "I don't think it has been faster than normal.",
-        "No I don't believe so."
-      ]
-    },
-    {
+	    {
       "type": "indigestion",
       "positive": [
         "Yes I have been having indigestion.",
@@ -780,7 +781,7 @@
         "No I haven't had any problems like that.",
         "No I would say my limbs are still going strong!"
       ]
-    }
+    }*/
   ],
   "diseases": [
     {
