@@ -18,68 +18,6 @@
    ]
   },
   {
-   "type": "alzhemier's",
-   "symptoms": [
-    "confusion",
-    "hallucinations",
-    "pesonality_changes",
-    "depression"
-   ]
-  },
-  {
-   "type": "bulimia",
-   "symptoms": [
-    "depression",
-    "anxiety",
-    "obsessive_attitude_towards_food_and_eating"
-   ]
-  },
-  {
-   "type": "bronchitis",
-   "symptoms": [
-    "sore_throat",
-    "headache",
-    "runny_nose",
-    "fatigue"
-   ]
-  },
-  {
-   "type": "chronic_fatigue_syndrome",
-   "symptoms": [
-    "sleep_disturbance",
-    "dizziness",
-    "nausea",
-    "loss_of_appetite"
-   ]
-  },
-  {
-   "type": "conjunctivitis",
-   "symptoms": [
-    "pain_in_eyes",
-    "sensitivity_to_light",
-    "disturbed_vision",
-    "intense_redness_in_eyes"
-   ]
-  },
-  {
-   "type": "crohn's_disease",
-   "symptoms": [
-    "diarrhea",
-    "abdominal_pain",
-    "fatigue",
-    "weight_loss",
-    "blood_in_stool"
-   ]
-  },
-  {
-   "type": "cystic_fibrosis",
-   "symptoms": [
-    "wheezing",
-    "cough",
-    "recurring_chest_infection"
-   ]
-  },
-  {
    "type": "chickenpox",
    "symptoms": [
     "rash",
@@ -90,41 +28,12 @@
    ]
   },
   {
-   "type": "gallbladder_cancer",
-   "symptoms": [
-    "abdominal_pain",
-    "jaundice"
-   ]
-  },
-  {
-   "type": "hay_fever",
-   "symptoms": [
-    "sneezing",
-    "runny_nose"
-   ]
-  },
-  {
-   "type": "haemorrhoids",
-   "symptoms": [
-    "bleeding",
-    "itchy_bottom",
-    "mucus_discharge"
-   ]
-  },
-  {
    "type": "flu",
    "symptoms": [
     "cough",
     "fever",
     "chills",
     "fatigue"
-   ]
-  },
-  {
-   "type": "gout",
-   "symptoms": [
-    "joint_pain",
-    "red_shiny_skin_over_the_affected_joint"
    ]
   },
   {
@@ -139,107 +48,11 @@
    ]
   },
   {
-   "type": "measles",
-   "symptoms": [
-    "runny_nose",
-    "sneezing",
-    "cough",
-    "sore,_red_eyes",
-    "fever",
-    "small_gray-ish_white_spots_on_the_inside_of_the_cheeks"
-   ]
-  },
-  {
-   "type": "meningitis",
-   "symptoms": [
-    "fever",
-    "headache",
-    "rash",
-    "stiff_neck",
-    "drowsiness",
-    "seizures",
-    "dislike_of_bright_lights"
-   ]
-  },
-  {
-   "type": "mesothelioma",
-   "symptoms": [
-    "chest_pain",
-    "shortness_of_breath",
-    "fatigue",
-    "fever",
-    "sweating",
-    "cough",
-    "loss_of_appetite"
-   ]
-  },
-  {
    "type": "migraine",
    "symptoms": [
     "headache",
     "nausea",
     "vomiting"
-   ]
-  },
-  {
-   "type": "narcolepsy",
-   "symptoms": [
-    "excessive_daytime_sleepiness",
-    "sleep_attacks",
-    "sleep_paralysis"
-   ]
-  },
-  {
-   "type": "neuroblastoma",
-   "symptoms": [
-    "stomachache",
-    "shortness_of_breath",
-    "difficulty_swallowing",
-    "a_lump_in_the_neck",
-    "fatigue",
-    "pale_skin",
-    "loss_of_appetite"
-   ]
-  },
-  {
-   "type": "oedema",
-   "symptoms": [
-    "puffiness_of_the_skin",
-    "skin_discoloration",
-    "aching_limbs",
-    "stiff_joints",
-    "weight_gain"
-   ]
-  },
-  {
-   "type": "oesophageal_cancer",
-   "symptoms": [
-    "difficulty_swallowing",
-    "weight_loss",
-    "indigestion",
-    "heartburn",
-    "loss_of_appetite"
-   ]
-  },
-  {
-   "type": "pancreatic_cancer",
-   "symptoms": [
-    "back_pain",
-    "stomachache",
-    "weight_loss",
-    "jaundice",
-    "nausea",
-    "fever",
-    "chills"
-   ]
-  },
-  {
-   "type": "pelvic_inflammatory_disease",
-   "symptoms": [
-    "pain_around_the_pelvis",
-    "pain_during_sex",
-    "pain_during_urination",
-    "bleeding"
    ]
   },
   {
@@ -262,16 +75,6 @@
     "headache",
     "stomachache",
     "muscle_pain"
-   ]
-  },
-  {
-   "type": "polycystic_ovary_syndrome",
-   "symptoms": [
-    "irregular_periods",
-    "excessive_hair_growth",
-    "weight_gain",
-    "hair_loss",
-    "oily_skin"
    ]
   },
   {
