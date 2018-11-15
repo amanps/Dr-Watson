@@ -5,13 +5,30 @@ import java.util.ArrayList;
 public class ScoreCalculate implements ScoreCalculator {
 
     @Override
-    public int getScore(ArrayList<String> AllSymptoms,
+    public String getScore(ArrayList<String> AllSymptoms,
             ArrayList<String> AskedSymptoms, ArrayList<String> ResponsedAnswer,
             String CorrectAnswer) {
         int score = 0;
         int correctSymptoms = 0;
         int countTotal = AllSymptoms.size();
         int countAsked = AskedSymptoms.size();
+        if (countTotal == 0 || CorrectAnswer.length() == 0) {
+            return "Whoops, that didn't work. Please try again.";
+        }
+        if (countAsked == 0) {
+            return "Your score is zero. You failed to ask the patient about any symptoms.";
+        }
+        int checkedAllSym = 60;
+        String message = "Your score is ";
+        String finalMesg = "";
+        String[] corrAns = CorrectAnswer.split("_");
+        String ansMsg = "";
+        for (int i = 0; i < corrAns.length; i++) {
+            ansMsg += ' ' + corrAns[i].substring(0, 1).toUpperCase()
+                    + corrAns[i].substring(1);
+        }
+        finalMesg += "It seems like you did not identify the correct disease,"
+                + ansMsg + ".\n";
 
         if (ResponsedAnswer.size() > 1) {
             for (int i = 0; i < ResponsedAnswer.size(); i++) {
@@ -24,29 +41,39 @@ public class ScoreCalculate implements ScoreCalculator {
                     } else {
                         score += scorePercentage / 2;
                     }
+
                 } else {
                     score -= 10;
                 }
             }
-        } else if (ResponsedAnswer.size() == 1) {
+        } else if (ResponsedAnswer.size() == 1)
+
+        {
+            if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
+                finalMesg = "Congratulations! You have identified the diesease correctly. \n";
+                checkedAllSym = 30;
+                score += 50;
+            }
             for (int i = 0; i < countAsked; i++) {
                 if (AllSymptoms.contains(AskedSymptoms.get(i))) {
-                    score += 30 / countTotal;
+                    score += checkedAllSym / countTotal;
                     correctSymptoms++;
                 }
             }
-            if (ResponsedAnswer.get(0).equals(CorrectAnswer)) {
-                score += 50;
-                score += (correctSymptoms) * 20 / countAsked;
-            }
+            score += (correctSymptoms) * 20 / countAsked;
         }
-        return score;
+
+        message += score + ". \n";
+        message += finalMesg;
+        message +=
+
+                MissSymptoms(AllSymptoms, AskedSymptoms);
+        return message;
     }
-    
-    @Override
-    public String MissSymptoms(ArrayList<String> AllSymptoms,
+
+    public static String MissSymptoms(ArrayList<String> AllSymptoms,
             ArrayList<String> AskedSymptoms) {
-        String Message = "You missed the following symptoms: ";
+        String Message = "Unfortunately, you missed the following symptoms:";
         String Symptom = "";
         ArrayList<String> notAsked = AllSymptoms;
         for (int i = 0; i < AskedSymptoms.size(); i++) {
@@ -55,30 +82,24 @@ public class ScoreCalculate implements ScoreCalculator {
             }
         }
         if (notAsked.size() == 0) {
-            Message = "You've got all of the symptoms. Great Job!";
+            Message = "You correctly investigated all possible symptoms. Great Job!";
             return Message;
         }
         for (int i = 0; i < notAsked.size(); i++) {
-            if (notAsked.get(i).length() > 1) {
-                Symptom = notAsked.get(i).substring(0, 1).toUpperCase()
-                        + notAsked.get(i).substring(1);
-                int index = Symptom.indexOf('_');
-                if (index >= 0) {
-                    Symptom = notAsked.get(i).substring(0, 1).toUpperCase()
-                            + notAsked.get(i).substring(1, index) + ' '
-                            + notAsked.get(i).substring(index + 1);
+            if (notAsked.get(i).length() > 0) {
+                String[] sym = notAsked.get(i).split("_");
+                for (int j = 0; j < sym.length; j++) {
+                    Symptom += ' ' + sym[j].substring(0, 1).toUpperCase()
+                            + sym[j].substring(1);
                 }
-            } else if (notAsked.get(i).length() == 1) {
-                Symptom = notAsked.get(i).substring(0, 1).toUpperCase();
-                int index = Symptom.indexOf('_');
-                if (index >= 0) {
-                    Symptom = " ";
-                }
+            } else {
+                Symptom = "";
             }
             Message += Symptom;
-            if (i != notAsked.size() - 1) {
-                Message += ", ";
-            } else {
+            Symptom = "";
+            if (i != notAsked.size() - 1 && notAsked.get(i).length() > 0) {
+                Message += ",";
+            } else if (i == notAsked.size() - 1) {
                 Message += ".";
             }
         }

@@ -1,28 +1,28 @@
 {
   "name": {
     "male": [
-      "James",
-      "John",
-      "Robert",
-      "Michael",
-      "William"
+      "My name is James.",
+      "My name is John.",
+      "My name is Robert.",
+      "My name is Michael.",
+      "My name is William."
     ],
     "female": [
-      "Mary",
-      "Jenny",
-      "Elizabeth",
-      "Jennifer",
-      "Sarah"
+      "My name is Mary.",
+      "My name is Jenny.",
+      "My name is Elizabeth.",
+      "My name is Jennifer.",
+      "My name is Sarah."
     ]
   },
   "age": [
-    "18",
-    "24",
-    "28",
-    "32",
-    "38",
-    "46",
-    "52"
+    "I am 18 years old.",
+    "I am 24 years old.",
+    "I am 28 years old.",
+    "I am 32 years old.",
+    "I am 38 years old.",
+    "I am 46 years old.",
+    "I am 52 years old."
   ],
   "symptoms": [
     {
@@ -199,7 +199,7 @@
     {
       "type": "abdominal_pain",
       "positive": [
-        "Yes I have.",
+        "Yes I have do have abdominal pain every now and then.",
         "Yeah it hurts pretty often."
       ],
       "negative": [
@@ -326,17 +326,6 @@
       ]
     },
     {
-      "type": "pain",
-      "positive": [
-        "Yes I have had pain recently.",
-        "I have definitely been in some pain lately."
-      ],
-      "negative": [
-        "Not really.",
-        "No I don't think so."
-      ]
-    },
-    {
       "type": "sleep_disturbance",
       "positive": [
         "I haven't had a good nights sleep in a while.",
@@ -419,7 +408,7 @@
     {
       "type": "headache",
       "positive": [
-        "Yeah, I've been having random headache.",
+        "Yeah, I've been having random headaches.",
         "Now that you mention it, I have been experiencing headaches throughout the day.",
         "Yes, a few headaches here and there."
       ],
@@ -516,6 +505,128 @@
       ]
     },
     {
+      "type": "sensitivity_to_light",
+      "positive": [
+        "Yes I have had a hard time looking at bright lights.",
+        "Yeah looking at anything bright hurts pretty bad.",
+        "I would say so. I have had to wear sunglasses everywhere."
+      ],
+      "negative": [
+        "No, my eyes haven't been sensitive to light.",
+        "I wouldn't say so."
+      ]
+    },
+    {
+      "type": "shortness_of_breath",
+      "positive": [
+        "It has been pretty hard for me to catch my breath lately yes.",
+        "Yeah going up stairs or anything like that has been hard."
+      ],
+      "negative": [
+        "No that hasn't been a problem lately.",
+        "Well going up stairs is hard but thats just because I'm out of shape! So not anymore than normal."
+      ]
+    },
+    {
+      "type": "itchy_bottom",
+      "positive": [
+        "Yeah it has been pretty itchy lately.",
+        "It has definitely been more itchly than normal."
+      ],
+      "negative": [
+        "Not anymore than normal!",
+        "No everything has been fine down there."
+      ]
+    },
+    {
+      "type": "puffiness_of_the_skin",
+      "positive": [
+        "Yeah there is some puffiness in a couple areas.",
+        "Yes my skin has been unusually puffy lately."
+      ],
+      "negative": [
+        "I haven't noticed anything like that no.",
+        "No I think my skin has been fine."
+      ]
+    },
+    {
+      "type": "pain_around_the_pelvis",
+      "positive": [
+        "Yes that area has been pretty sensitive.",
+        "Yeah my pelvis has been in pain."
+      ],
+      "negative": [
+        "No that area has been fine.",
+        "Not really, I'm pretty sure my pelvis is alright."
+      ]
+    },
+    {
+      "type": "irregular_periods",
+      "positive": [
+        "Yes my periods have been very irregular.",
+        "Yeah they haven't been predictable at all."
+      ],
+      "negative": [
+        "No they've been regular.",
+        "Nope they have been just fine."
+      ]
+    },
+    {
+      "type": "increased_need_to_pee",
+      "positive": [
+        "Yes I have to pee all the time.",
+        "Yeah I defintely have been going to the bathroom more than normal."
+      ],
+      "negative": [
+        "No I have been going a normal amount I would say.",
+        "Not really."
+      ]
+    },
+    {
+      "type": "reduced_sense_of_smell",
+      "positive": [
+        "Yes I haven't been able to smell well at all.",
+        "Now that you mention it I haven't been smelling much of anything."
+      ],
+      "negative": [
+        "No my sense of smell is as strong as ever.",
+        "No smelling has not been a problem for me."
+      ]
+    },
+    {
+      "type": "straining_while_you_pee",
+      "positive": [
+        "Yes that has definitely been a problem with me.",
+        "Yeah I have been straining while going lately."
+      ],
+      "negative": [
+        "No I haven't had a problem peeing.",
+        "No going to the bathroom has been normal for me."
+      ]
+    },
+    {
+      "type": "excessive_hair_growth",
+      "positive": [
+        "Yes my hair has been growing much quicker than normal.",
+        "Yeah I would say so. I have been growing hair faster than usual."
+      ],
+      "negative": [
+        "No I haven't noticed anything like that.",
+        "No my hair growth has been pretty normal."
+      ]
+    },
+    {
+      "type": "pain_during_sex",
+      "positive": [
+        "Yes I have been avoiding sex because the last couple of time it was pretty painful for me.",
+        "Yeah the last couple of times has been very painful. I had to stop in the middle a couple of times."
+      ],
+      "negative": [
+        "No, my sex life has been great.",
+        "Not at all. Sex has been normal for me."
+      ]
+    },
+    {
       "type": "vomiting",
       "positive": [
         "Yeah I have been throwing up alot lately.",
@@ -524,6 +635,150 @@
       "negative": [
         "No I haven't been throwing up.",
         "No I have not been vomiting."
+      ]
+    },
+    {
+      "type": "green_or_yellow_mucus_from_your_nose",
+      "positive": [
+        "Yeah when I blow my nose it a greenish yellow color.",
+        "Yes it has been that color when I blow my nose."
+      ],
+      "negative": [
+        "No I haven't noticed anything that like.",
+        "No my mucus has been pretty normal colored I'd say."
+      ]
+    },
+    {
+      "type": "feeling_like_your_bladder_isnt_fully_emptied",
+      "positive": [
+        "Yeah I always feeling like I have to go more but nothing comes out.",
+        "Yes it has been very annoying because I feel like more needs to come out but it never does."
+      ],
+      "negative": [
+        "No, going to the bathroom has been fine.",
+        "No peeing has been pretty normal."
+      ]
+    },
+    {
+      "type": "weight_gain",
+      "positive": [
+        "Yeah I have been gaining weight.",
+        "Yes, my weight has increased but I haven't changed my diet at all."
+      ],
+      "negative": [
+        "No my weight has been pretty consistent.",
+        "No I haven't gained any weight."
+      ]
+    },
+    {
+      "type": "pain_during_urination",
+      "positive": [
+        "Yes, going to the bathroom has not been fun.",
+        "Yeah, peeing has been pretty painful."
+      ],
+      "negative": [
+        "No I haven't had any pain when I pee.",
+        "No peeing has been fine for me."
+      ]
+    },
+    {
+      "type": "rapid_heartbeat",
+      "positive": [
+        "Yes my heart rate has seemed much faster than normal.",
+        "Yeah my heart beat defintely feels faster."
+      ],
+      "negative": [
+        "I don't think it has been faster than normal.",
+        "No I don't believe so."
+      ]
+    },
+    {
+      "type": "indigestion",
+      "positive": [
+        "Yes I have been having indigestion.",
+        "Yeah, my upper stomach area has been in some pain."
+      ],
+      "negative": [
+        "No I haven't had any pain in my stomach area so I don't think so.",
+        "No I haven't had any indigestion."
+      ]
+    },
+    {
+      "type": "skin_discoloration",
+      "positive": [
+        "I have had some discoloration around the swollen areas of my body.",
+        "Yes some of the affected area has turned a weird color."
+      ],
+      "negative": [
+        "No I haven't noticed any discoloration of any kind.",
+        "No, I don't think I have experienced any of that."
+      ]
+    },
+    {
+      "type": "sleep_attacks",
+      "positive": [
+        "Yes, sometimes randomly throughout the day I will just fall asleep.",
+        "Yes I would say so. I will just fall asleep randomly no matter what I am doing.",
+        "Yeah I will fall asleep out of no where it seems."
+      ],
+      "negative": [
+        "No I don't fall asleep randomly like that.",
+        "If you mean do I fall asleep at random times then no."
+      ]
+    },
+    {
+      "type": "red,_shiny_skin_over_the_affected_joint",
+      "positive": [
+        "Yes that area has been pretty red.",
+        "Yeah, the joint is pretty red and shiny."
+      ],
+      "negative": [
+        "No, the joint isn't red or shiny.",
+        "No, I haven't noticed the joint being red or shiny."
+      ]
+    },
+    {
+      "type": "disturbed_vision",
+      "positive": [
+        "Yes, I have noticed I have alot of build up in my eye especially when I wake up in the morning.",
+        "Yeah there are a lot of times when I need to blink many times before it is back to normal."
+      ],
+      "negative": [
+        "No I wouldn't say my vision has been disturbed or anything like that.",
+        "No, my vision has been fine lately."
+      ]
+    },
+    {
+      "type": "recurring_chest_infection",
+      "positive": [
+        "Yes I have had a couple of chest infections this year. It's more than I have gotten my entire life.",
+        "Yeah, I have had chest infections and they keep coming back no matter what I do."
+      ],
+      "negative": [
+        "No I haven't had any problems with chest infections.",
+        "No my chest has been fine."
+      ]
+    },
+    {
+      "type": "mucus_discharge",
+      "positive": [
+        "Yeah I notice some in my underwear at the end of a long day.",
+        "Yes, when I wipe I can tell mucus is there."
+      ],
+      "negative": [
+        "No I haven't noticed any discharge or anything like that.",
+        "No, I haven't had any mucus discharge."
+      ]
+    },
+    {
+      "type": "aching_limbs",
+      "positive": [
+        "Yes, my limbs have definitely been aching lately. It's tough going up stairs or any type of cardio.",
+        "Yeah I have noticed some achiness."
+      ],
+      "negative": [
+        "No I haven't had any problems like that.",
+        "No I would say my limbs are still going strong!"
       ]
     }
   ],
@@ -537,7 +792,7 @@
     {
       "type": "yellow_fever",
       "open": [
-        "I'm pretty sure I have the flu. I feel like I have a fever and I haven't been eating alot lately."
+        "I'm pretty sure I have the flu. I feel like I have a fever and I haven't been eating as much as I normally do lately."
       ]
     },
     {
@@ -561,13 +816,49 @@
     {
       "type": "polio",
       "open": [
-        "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately."
+        "I don't really know what I have. I've been having muscle aches and pains and my head has been hurting lately. It seems like a cold or something to me."
       ]
     },
     {
       "type": "pneumonia",
       "open": [
-        "Well I have had a cough and the chills for a little bit now. Also I haven't been eating alot lately."
+        "Well I have had a cough and the chills for a little bit now and I wanted to see whats going on."
+      ]
+    },
+    {
+      "type": "arthritis",
+      "open":[
+        "Well my right hand has been pain as of late. Whenever I go to grab something it hurts pretty bad."
+      ]
+    },
+    {
+      "type": "appendicitis",
+      "open": [
+        "I'm just having some killer pain near my stomach and I wanted to come in to make sure it was nothing serious."
+      ]
+    },
+    {
+      "type": "migraine",
+      "open": [
+        "Occasionally in the morning, my head kind of hurts. And after a hard day at work when I'm driving home, the sun appears brighter than normal."
+      ]
+    },
+    {
+      "type": "chickenpox",
+      "open": [
+	     "I have blisters that are super-itchy. I noticed them initially on my arms, but recently it's begun to spread all over my body."
+      ]
+    },
+    {
+      "type": "malaria",
+      "open": [
+        "It has been a few weeks since I came back from a camping trip. Now I think I have the flu."
+      ]
+    },
+    {
+      "type": "flu",
+      "open": [
+        "I been feeling feverish and sluggish for the last few days."
       ]
     }
   ]

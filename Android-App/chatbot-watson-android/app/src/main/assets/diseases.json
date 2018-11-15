@@ -31,7 +31,6 @@
    "symptoms": [
     "depression",
     "anxiety",
-    "isolation",
     "obsessive_attitude_towards_food_and_eating"
    ]
   },
@@ -47,11 +46,10 @@
   {
    "type": "chronic_fatigue_syndrome",
    "symptoms": [
-    "pain",
     "sleep_disturbance",
     "dizziness",
     "nausea",
-    "loss_of_appetitie"
+    "loss_of_appetite"
    ]
   },
   {
@@ -88,14 +86,13 @@
     "fever",
     "muscle_pain",
     "headache",
-    "loss_of_appetitie"
+    "loss_of_appetite"
    ]
   },
   {
    "type": "gallbladder_cancer",
    "symptoms": [
     "abdominal_pain",
-    "sick",
     "jaundice"
    ]
   },
@@ -120,7 +117,7 @@
     "cough",
     "fever",
     "chills",
-    "weakness"
+    "fatigue"
    ]
   },
   {
@@ -189,7 +186,6 @@
    "symptoms": [
     "excessive_daytime_sleepiness",
     "sleep_attacks",
-    "cataplexy",
     "sleep_paralysis"
    ]
   },
@@ -197,7 +193,7 @@
    "type": "neuroblastoma",
    "symptoms": [
     "stomachache",
-    "breathlessness",
+    "shortness_of_breath",
     "difficulty_swallowing",
     "a_lump_in_the_neck",
     "fatigue",

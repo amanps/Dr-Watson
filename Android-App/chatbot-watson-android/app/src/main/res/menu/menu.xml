@@ -2,12 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/tuberculosis"
-        android:title="@string/tuberculosis"
-        app:showAsAction="never"/>
+        android:id="@+id/audio"
+        app:showAsAction="always"
+        android:icon="@drawable/audio_selector"/>
 
-    <item
-        android:id="@+id/iron_deficiency"
-        android:title="@string/iron_deficiency"
-        app:showAsAction="never"/>
 </menu>
