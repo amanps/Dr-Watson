@@ -525,6 +525,61 @@
         "I don't think it has been faster than normal.",
         "No I don't believe so."
       ]
+    },
+		{
+      "type": "increased_need_to_pee",
+      "positive": [
+        "Yes I have to pee all the time.",
+        "Yeah I defintely have been going to the bathroom more than normal."
+      ],
+      "negative": [
+        "No I have been going a normal amount I would say.",
+        "Not really."
+      ]
+    },
+		{
+      "type": "straining_while_you_pee",
+      "positive": [
+        "Yes that has definitely been a problem with me.",
+        "Yeah I have been straining while going lately."
+      ],
+      "negative": [
+        "No I haven't had a problem peeing.",
+        "No going to the bathroom has been normal for me."
+      ]
+    },
+		{
+      "type": "feeling_like_your_bladder_isnt_fully_emptied",
+      "positive": [
+        "Yeah I always feeling like I have to go more but nothing comes out.",
+        "Yes it has been very annoying because I feel like more needs to come out but it never does."
+      ],
+      "negative": [
+        "No, going to the bathroom has been fine.",
+        "No peeing has been pretty normal."
+      ]
+    },
+		{
+      "type": "reduced_sense_of_smell",
+      "positive": [
+        "Yes I haven't been able to smell well at all.",
+        "Now that you mention it I haven't been smelling much of anything."
+      ],
+      "negative": [
+        "No my sense of smell is as strong as ever.",
+        "No smelling has not been a problem for me."
+      ]
+    },
+		{
+      "type": "green_or_yellow_mucus_from_your_nose",
+      "positive": [
+        "Yeah when I blow my nose it a greenish yellow color.",
+        "Yes it has been that color when I blow my nose."
+      ],
+      "negative": [
+        "No I haven't noticed anything that like.",
+        "No my mucus has been pretty normal colored I'd say."
+      ]
     }
   ],
   "diseases": [
