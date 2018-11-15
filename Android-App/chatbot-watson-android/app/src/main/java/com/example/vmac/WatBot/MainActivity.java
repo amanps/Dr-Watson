@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
     private SpeakerLabelsDiarization.RecoTokens recoTokens;
     private MicrophoneHelper microphoneHelper;
     private Logger myLogger;
+    private boolean textToSpeechEnabled = false;
 
     ConversationJson conversationJson;
     Disease currentDisease;
@@ -183,36 +184,36 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
-            @Override
-            public void onClick(View view, final int position) {
-                Thread thread = new Thread(new Runnable() {
-                    public void run() {
-                        Message audioMessage;
-                        try {
-
-                            audioMessage =(Message) messageArrayList.get(position);
-                            streamPlayer = new StreamPlayer();
-                            if(audioMessage != null && !audioMessage.getMessage().isEmpty())
-                                //Change the Voice format and choose from the available choices
-                                streamPlayer.playStream(textToSpeech.synthesize(audioMessage.getMessage(), Voice.EN_LISA).execute());
-                            else
-                                streamPlayer.playStream(textToSpeech.synthesize("No Text Specified", Voice.EN_LISA).execute());
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-                thread.start();
-            }
-
-            @Override
-            public void onLongClick(View view, int position) {
-                recordMessage();
-
-            }
-        }));
+//        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
+//            @Override
+//            public void onClick(View view, final int position) {
+//                Thread thread = new Thread(new Runnable() {
+//                    public void run() {
+//                        Message audioMessage;
+//                        try {
+//
+//                            audioMessage =(Message) messageArrayList.get(position);
+//                            streamPlayer = new StreamPlayer();
+//                            if(audioMessage != null && !audioMessage.getMessage().isEmpty())
+//                                //Change the Voice format and choose from the available choices
+//                                streamPlayer.playStream(textToSpeech.synthesize(audioMessage.getMessage(), Voice.EN_LISA).execute());
+//                            else
+//                                streamPlayer.playStream(textToSpeech.synthesize("No Text Specified", Voice.EN_LISA).execute());
+//
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                });
+//                thread.start();
+//            }
+//
+//            @Override
+//            public void onLongClick(View view, int position) {
+//                recordMessage();
+//
+//            }
+//        }));
 
         btnSend.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -355,25 +356,28 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                             messageArrayList.add(outMessage);
-                            Thread thread = new Thread(new Runnable() {
-                                public void run() {
-                                    Message audioMessage;
-                                    try {
 
-                                        audioMessage = outMessage;
-                                        streamPlayer = new StreamPlayer();
-                                        if(audioMessage != null && !audioMessage.getMessage().isEmpty())
-                                            //Change the Voice format and choose from the available choices
-                                            streamPlayer.playStream(textToSpeech.synthesize(audioMessage.getMessage(), Voice.EN_LISA).execute());
-                                        else
-                                            streamPlayer.playStream(textToSpeech.synthesize("No Text Specified", Voice.EN_LISA).execute());
+                            if (textToSpeechEnabled) {
+                                Thread thread = new Thread(new Runnable() {
+                                    public void run() {
+                                        Message audioMessage;
+                                        try {
 
-                                    } catch (Exception e) {
-                                        e.printStackTrace();
+                                            audioMessage = outMessage;
+                                            streamPlayer = new StreamPlayer();
+                                            if (audioMessage != null && !audioMessage.getMessage().isEmpty())
+                                                //Change the Voice format and choose from the available choices
+                                                streamPlayer.playStream(textToSpeech.synthesize(audioMessage.getMessage(), Voice.EN_LISA).execute());
+                                            else
+                                                streamPlayer.playStream(textToSpeech.synthesize("No Text Specified", Voice.EN_LISA).execute());
+
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
                                     }
-                                }
-                            });
-                            thread.start();
+                                });
+                                thread.start();
+                            }
                         }
 
                         runOnUiThread(new Runnable() {
@@ -551,16 +555,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.tuberculosis: {
-                DrWatsonApplication.setWorkspaceId(DrWatsonApplication.WorkspaceIds.TB);
-                DrWatsonApplication.setCurrentDiseaseName(DrWatsonApplication.Diseases.TB);
-                recreate();
-                break;
-            }
-            case R.id.iron_deficiency: {
-                DrWatsonApplication.setWorkspaceId(DrWatsonApplication.WorkspaceIds.IRON);
-                DrWatsonApplication.setCurrentDiseaseName(DrWatsonApplication.Diseases.IRON_DEFICIENCY);
-                recreate();
+            case R.id.audio: {
+                textToSpeechEnabled = !textToSpeechEnabled;
+                String toast = textToSpeechEnabled ? "Text to speech enabled" : "Text to speech disabled";
+                int drawable = textToSpeechEnabled ? R.drawable.volume : R.drawable.volume_off;
+                item.setIcon(drawable);
+                Toast.makeText(this, toast, Toast.LENGTH_SHORT).show();
                 break;
             }
         }
