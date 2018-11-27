@@ -526,6 +526,162 @@
         "No I haven't noticed anything that like.",
         "No my mucus has been pretty normal colored I'd say."
       ]
+    },
+    {
+      "type": "stiff_neck",
+      "positive": [
+        "Yes I have had some stiffness in my neck recently.",
+        "Yeah my neck has been pretty stiff."
+      ],
+      "negative": [
+        "No my neck has been fine.",
+        "Not really, I would say my neck is alright."
+      ]
+    },
+    {
+      "type": "stiff_joints",
+      "positive": [
+        "Yeah I would say so.",
+        "Yes I have noticed certain joints being in pain recently."
+      ],
+      "negative": [
+        "No I think my joints are in tip top shape.",
+        "No my joints are fine."
+      ]
+    },
+    {
+      "type": "heartburn",
+      "positive": [
+        "Yeah I have had some bad heartburn lately.",
+        "Now that you mention it yes! I thought it was just from my diet."
+      ],
+      "negative": [
+        "No I haven't had any heartburn.",
+        "I haven't felt anything like that recently no."
+      ]
+    },
+    {
+      "type": "jaundice",
+      "positive": [
+        "Yes there is some skin that looks like it is discolored.",
+        "Some areas of my body have gotten to be a weird yellow color."
+      ],
+      "negative": [
+        "No I don't think I have experienced any skin discoloration anywhere.",
+        "No I don't have jaundice."
+      ]
+    },
+    {
+      "type": "sleep_paralysis",
+      "positive": [
+        "Actually I have! I wake up in the middle of the night but I can't move a muscle!",
+        "Yes I frequently wake up and am not able to move my body. Sometimes I see weird things in my bedroom as well."
+      ],
+      "negative": [
+        "No I have not experienced any sleep paralysis.",
+        "No I haven't had any episodes of sleep paralysis."
+      ]
+    },
+    {
+      "type": "hair_loss",
+      "positive": [
+        "Yes I have been losing hair lately.",
+        "I have experienced some hair loss yes."
+      ],
+      "negative": [
+        "No I haven't had any loss of hair.",
+        "Haha I sure hope not! Nothing that I have noticed."
+      ]
+    },
+    {
+      "type": "oily_skin",
+      "positive": [
+        "I have always had oily skin but it definitely seems worse now that you mention it!",
+        "My skin has been unusually oily lately yes.",
+        "Yes my skin is pretty oily."
+      ],
+      "negative": [
+        "No my skin is flawless.",
+        "Nope my skin has been fine.",
+        "I have pretty dry skin actually so not at all."
+      ]
+    },
+    {
+      "type": "pale_skin",
+      "positive": [
+        "My skin has gotten pretty pale yeah.",
+        "I defintely look more pale than I used to."
+      ],
+      "negative": [
+        "I am tan and beautiful doc so no.",
+        "No I am not pale at all can't you tell?!"
+      ]
+    },
+    {
+      "type": "lump_in_neck",
+      "positive": [
+        "Yes I feel a lump in my neck right in this area.",
+        "Yeah there is a lump in my neck how did you know?"
+      ],
+      "negative": [
+        "Not that I know of!",
+        "No, I am lump free."
+      ]
+    },
+    {
+      "type": "drowsiness",
+      "positive": [
+        "Yes I have been super drowsy lately.",
+        "Yeah I have felt very drowsy."
+      ],
+      "negative": [
+        "No I haven't felt drowsy at all.",
+        "No I don't think so."
+      ]
+    },
+    {
+      "type": "seizures",
+      "positive": [
+        "Yes I have been experiencing some seizures every once in a while.",
+        "Yeah I have had some mini seizures recently."
+      ],
+      "negative": [
+        "No I haven't had any seizures.",
+        "No I have never had a seizure."
+      ]
+    },
+    {
+      "type": "sore_red_eyes",
+      "positive": [
+        "Yeah my eyes have been pretty sore.",
+        "I have noticed my eyes being in pain and pretty red."
+      ],
+      "negative": [
+        "No my eyes have been fine.",
+        "No my eyes haven't been sore or red at all."
+      ]
+    },
+    {
+      "type": "obsessive_attitude_towards_eating_food",
+      "positive": [
+        "If I'm being honest then yes. Whenever I see food I have a need to be near it.",
+        "Well my friends say I talk about food in my sleep all the time so I would say yes."
+      ],
+      "negative": [
+        "No not at all.",
+        "No I wouldn't say so. I love food but I dont obsess over it."
+      ]
+    },
+    {
+      "type": "blood_in_stool",
+      "positive": [
+        "Yes there has been blood in the toilet after I go.",
+        "Yeah I have noticed that."
+      ],
+      "negative": [
+        "No I haven't had any of that.",
+        "Nope I have not seen that at all."
+      ]
     }
   ],
   "diseases": [
